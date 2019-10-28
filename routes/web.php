@@ -14,7 +14,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('qlive.index');
 });
 
 Route::match(['get','post'],'/admin','Admin\AdminController@login');
@@ -31,6 +31,9 @@ Route::match(['get','post'],'/admin','Admin\AdminController@login');
     Route::match(['get','post'],'/admin/edit-category/{id}','CategoryController@editCategory');
     Route::match(['get','post'],'/admin/delete-category/{id}','CategoryController@deleteCategory');
     Route::get('/admin/view-categories','CategoryController@viewCategories');
+
+    // Article Route (Admin)
+     Route::match(['get','post'],'/admin/add-article','ArticleController@addArticle');
  });
 
 Route::get('/logout', 'Admin\AdminController@logout');
