@@ -19,7 +19,7 @@ class RedirectIfAuthenticated
     {
         if (Auth::guard($guard)->check()) {
             return redirect('/home');
-        } else {
+        }else {
             return redirect('/admin')->with('flash_message_error', 'Please login to access');
         }
 
