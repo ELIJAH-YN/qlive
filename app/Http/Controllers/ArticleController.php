@@ -50,9 +50,11 @@ class ArticleController extends Controller
             }
 
             $article->save();
-            return redirect()->back()->with('flash_message_success','Article has added successfully!');
+//            return redirect()->back()->with('flash_message_success','Article has added successfully!');
+            return redirect('/admin/view-articles')->with('flash_message_success','Article has added successfully!');
         }
 
+        // Category drop down start
         $categories = Category::where(['parent_id'=>0])->get();
         $categories_dropdown = "<option selected disabled>Select</option>";
         foreach ($categories as $cat)
@@ -63,8 +65,72 @@ class ArticleController extends Controller
                 $categories_dropdown .= "<option value='".$sub_cat->id."'>&nbsp;--&nbsp;".$sub_cat->name."</option>";
             }
         }
+        // Category drop down end
 
         return view('admin.articles.add_article')->with(compact('categories_dropdown'));
+    }
+
+    public function editArticle(Request $request, $id=null)
+    {
+        if ($request->isMethod('post')) {
+            $data = $request->all();
+//            echo "<pre>"; print_r($data); die();
+
+            // Upload Image
+            if ($request->hasFile('cover')) {
+                $cover_tmp = $request->file('cover');
+                if ($cover_tmp->isValid()) {
+                    $extension = $cover_tmp->getClientOriginalExtension();
+                    $filename = rand(111,99999). '.' .$extension;
+                    $large_image_path = 'assets/images/cover/large/'.$filename;
+                    $medium_image_path = 'assets/images/cover/medium/'.$filename;
+                    $small_image_path = 'assets/images/cover/small/'.$filename;
+                    // Resize Image code
+                    Image::make($cover_tmp)->save($large_image_path);
+                    Image::make($cover_tmp)->resize(600,600)->save($medium_image_path);
+                    Image::make($cover_tmp)->resize(300,300)->save($small_image_path);
+                }
+            }else {
+                $filename = $data['current_cover'];
+            }
+
+            if (empty($data['description'])) {
+                $data['description'];
+            }
+
+            Article::where(['id'=>$id])->update(['article_id'=>$data['article_id'],'title'=>$data['title'],'description'=>$data['description'],'cover'=>$filename]);
+            return redirect()->back()->with('flash_message_success','文章修改成功');
+        }
+
+        // Get Article Details
+        $articleDetails = Article::where(['id'=>$id])->first();
+
+        // Category drop down start
+        $categories = Category::where(['parent_id'=>0])->get();
+        $categories_dropdown = "<option selected disabled>Select</option>";
+        foreach ($categories as $cat)
+        {
+            if ($cat->id == $articleDetails->article_id)
+            {
+                $selected = "selected";
+            } else {
+                $selected = "";
+            }
+            $categories_dropdown .="<option value='".$cat->id."' ".$selected.">".$cat->name."</option>";
+            $sub_categories = Category::where(['parent_id'=>$cat->id])->get();
+            foreach ($sub_categories as $sub_cat) {
+                if ($sub_cat->id == $articleDetails->article_id)
+                {
+                    $selected = "selected";
+                } else {
+                    $selected = "";
+                }
+                $categories_dropdown .= "<option value='".$sub_cat->id."' ".$selected.">&nbsp;--&nbsp;".$sub_cat->name."</option>";
+            }
+        }
+        // Category drop down end
+
+        return view('admin.articles.edit_article')->with(compact('articleDetails','categories_dropdown'));
     }
 
     public function viewArticles()
@@ -72,11 +138,17 @@ class ArticleController extends Controller
         $articles = Article::get();
         $articles = json_decode(json_encode($articles));
         foreach ($articles as $key => $val) {
-            $category_name = Category::where(['id'=>$val->article_id])->first();
-            $articles[$key]->catrgory_name = $category_name->name;
+            $articles_name = Category::where(['id'=>$val->article_id])->first();
+            $articles[$key]->article_name = $articles_name->name;
 //            echo "<pre>"; print_r($articles); die();
         }
-        echo "<pre>"; print_r($articles); die();
+//        echo "<pre>"; print_r($articles); die();
         return view('admin.articles.view_articles')->with(compact('articles'));
+    }
+
+    public function deleteArticleCover($id=null)
+    {
+        Article::where(['id'=>$id])->update(['cover'=>'']);
+        return redirect()->back()->with('flash_message_success','文章封面已刪除!');
     }
 }

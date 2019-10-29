@@ -34,7 +34,7 @@
                                     <th>文章標題</th>
                                     <th>文章封面</th>
                                     <th>文章內容</th>
-                                    <th></th>
+                                    <th>編輯/刪除</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -42,9 +42,13 @@
                                     <tr class="gradeX">
                                         <td>{{ $article->article_name }}</td>
                                         <td>{{ $article->title }}</td>
-{{--                                        <td>{{ $article->cover }}</td>--}}
+                                        <td>
+                                            @if(!empty($article->cover))
+                                            <img src="{{ asset('/assets/images/cover/small/'.$article->cover) }}" alt="" style="width: 70px;">
+                                            @endif
+                                        </td>
                                         <td>{{ $article->description }}</td>
-                                        <td class="center"><a href="{{ url('/admin/edit-category/'.$article->id) }}" class="btn btn-primary btn-mini">Edit</a> <a id="delCat" href="{{ url('/admin/delete-category/'.$article->id) }}" class="btn btn-danger btn-mini">Delete</a></td>
+                                        <td class="center"><a href="{{ url('/admin/edit-article/'.$article->id) }}" class="btn btn-primary btn-mini">Edit</a> <a id="delCat" href="{{ url('/admin/delete-category/'.$article->id) }}" class="btn btn-danger btn-mini">Delete</a></td>
                                     </tr>
                                 @endforeach
                                 </tbody>

@@ -34,7 +34,9 @@ Route::match(['get','post'],'/admin','Admin\AdminController@login');
 
     // Article Route (Admin)
      Route::match(['get','post'],'/admin/add-article','ArticleController@addArticle');
+     Route::match(['get','post'],'/admin/edit-article/{id}','ArticleController@editArticle');
      Route::get('/admin/view-articles','ArticleController@viewArticles');
+     Route::get('/admin/delete-article-cover/{id}','ArticleController@deleteArticleCover');
  });
 
 Route::get('/logout', 'Admin\AdminController@logout');

@@ -101,7 +101,7 @@ $(document).ready(function(){
 		}
 	});
 
-    // Edit Category Validation
+    // add article Validation
     $("#add_article").validate({
 		rules:{
 			article_id:{
@@ -122,7 +122,28 @@ $(document).ready(function(){
 		}
 	});
 
-	$("#number_validate").validate({
+    // edit article Validation
+    $("#edit_article").validate({
+        rules:{
+            article_id:{
+                required:true
+            },
+            title:{
+                required:true
+            },
+        },
+        errorClass: "help-inline",
+        errorElement: "span",
+        highlight:function(element, errorClass, validClass) {
+            $(element).parents('.control-group').addClass('error');
+        },
+        unhighlight: function(element, errorClass, validClass) {
+            $(element).parents('.control-group').removeClass('error');
+            $(element).parents('.control-group').addClass('success');
+        }
+    });
+
+    $("#number_validate").validate({
 		rules:{
 			min:{
 				required: true,
