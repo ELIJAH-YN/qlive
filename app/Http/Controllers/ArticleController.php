@@ -74,9 +74,9 @@ class ArticleController extends Controller
         foreach ($articles as $key => $val) {
             $category_name = Category::where(['id'=>$val->article_id])->first();
             $articles[$key]->catrgory_name = $category_name->name;
-            echo "<pre>"; print_r($articles); die();
+//            echo "<pre>"; print_r($articles); die();
         }
-//        echo "<pre>"; print_r($articles); die();
+        echo "<pre>"; print_r($articles); die();
         return view('admin.articles.view_articles')->with(compact('articles'));
     }
 }
