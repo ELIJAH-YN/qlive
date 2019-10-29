@@ -8,11 +8,17 @@
                 <li><a href="{{ url('/admin/view-categories') }}">View Categories</a></li>
             </ul>
         </li>
+        <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>Article</span> <span class="label label-important">2</span></a>
+            <ul>
+                <li><a href="{{ url('/admin/add-article') }}">Add Article</a></li>
+                <li><a href="{{ url('/admin/view-articles') }}">View Categories</a></li>
+            </ul>
+        </li>
         <li> <a href="charts.html"><i class="icon icon-signal"></i> <span>Charts &amp; graphs</span></a> </li>
         <li> <a href="widgets.html"><i class="icon icon-inbox"></i> <span>Widgets</span></a> </li>
         <li><a href="tables.html"><i class="icon icon-th"></i> <span>Tables</span></a></li>
         <li><a href="grid.html"><i class="icon icon-fullscreen"></i> <span>Full width</span></a></li>
-        <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>Forms</span> <span class="label label-important">3</span></a>
+        <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>Forms</span> <span class="label label-important">4</span></a>
             <ul>
                 <li><a href="form-common.html">Basic Form</a></li>
                 <li><a href="form-validation.html">Form with Validation</a></li>
