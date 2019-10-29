@@ -32,6 +32,11 @@
                     <div class="image " style="background-image: url( '/assets/qlive/images/Desktop/banner5.png') "></div>
                 </div>
             </div>
+            <div class="jumbotron__item ">
+                <div class="imgbox__inner imgbox__inner-16-9">
+                    <div class="image " style="background-image: url( '/assets/qlive/images/Desktop/banner5.png') "></div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- <div class="jumbotron_Mobile ">
