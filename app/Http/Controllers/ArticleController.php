@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Category;
+use App\Paragraph;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
 use App\Article;
@@ -42,7 +43,7 @@ class ArticleController extends Controller
                     // Resize Image code
                     Image::make($cover_tmp)->save($large_image_path);
                     Image::make($cover_tmp)->resize(600,600)->save($medium_image_path);
-                    Image::make($cover_tmp)->resize(300,300)->save($small_image_path);
+                    Image::make($cover_tmp)->resize(283,160)->save($small_image_path);
 
                     //Store image name in cover table
                     $article->cover = $filename;
@@ -88,7 +89,7 @@ class ArticleController extends Controller
                     // Resize Image code
                     Image::make($cover_tmp)->save($large_image_path);
                     Image::make($cover_tmp)->resize(600,600)->save($medium_image_path);
-                    Image::make($cover_tmp)->resize(300,300)->save($small_image_path);
+                    Image::make($cover_tmp)->resize(283,160)->save($small_image_path);
                 }
             }else {
                 $filename = $data['current_cover'];
@@ -144,6 +145,12 @@ class ArticleController extends Controller
         }
 //        echo "<pre>"; print_r($articles); die();
         return view('admin.articles.view_articles')->with(compact('articles'));
+    }
+
+    public function deleteArticle($id=null)
+    {
+        Article::where(['id'=>$id])->delete();
+        return redirect()->back()->with('flash_message_success','成功刪除文章');
     }
 
     public function deleteArticleCover($id=null)

@@ -13,7 +13,10 @@
     <!-- <link rel="stylesheet" href="css/animate.css"> -->
     <link rel="stylesheet" href="{{ asset('/assets/qlive/css/component.css') }}">
     <link rel="stylesheet" href="{{ asset('/assets/qlive/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('/assets/qlive/css/modecard.css') }}">
     <!-- <link rel="stylesheet" href="css/landingStyle.css"> -->
+{{--    <link rel="stylesheet" href="{{ asset('/assets/css/backend_css/bootstrap.min.css') }}" />--}}
+{{--    <link rel="stylesheet" href="{{ asset('/assets/css/backend_css/bootstrap-responsive.min.css') }}" />--}}
 
 </head>
 <body>

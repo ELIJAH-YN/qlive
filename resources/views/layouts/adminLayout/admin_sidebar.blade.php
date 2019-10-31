@@ -2,16 +2,16 @@
 <div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i> Dashboard</a>
     <ul>
         <li class="active"><a href="index.html"><i class="icon icon-home"></i> <span>Dashboard</span></a> </li>
-        <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>Categories</span> <span class="label label-important">2</span></a>
+        <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>分類管理</span> <span class="label label-important">2</span></a>
             <ul>
-                <li><a href="{{ url('/admin/add-category') }}">Add Category</a></li>
-                <li><a href="{{ url('/admin/view-categories') }}">View Categories</a></li>
+                <li><a href="{{ url('/admin/add-category') }}">新增分類</a></li>
+                <li><a href="{{ url('/admin/view-categories') }}">查看分類</a></li>
             </ul>
         </li>
-        <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>Article</span> <span class="label label-important">2</span></a>
+        <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>文章管理</span> <span class="label label-important">2</span></a>
             <ul>
-                <li><a href="{{ url('/admin/add-article') }}">Add Article</a></li>
-                <li><a href="{{ url('/admin/view-articles') }}">View Categories</a></li>
+                <li><a href="{{ url('/admin/add-article') }}">新增文章</a></li>
+                <li><a href="{{ url('/admin/view-articles') }}">查看分類</a></li>
             </ul>
         </li>
         <li> <a href="charts.html"><i class="icon icon-signal"></i> <span>Charts &amp; graphs</span></a> </li>

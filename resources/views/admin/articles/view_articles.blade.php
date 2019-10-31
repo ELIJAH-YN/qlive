@@ -48,7 +48,10 @@
                                             @endif
                                         </td>
                                         <td>{{ $article->description }}</td>
-                                        <td class="center"><a href="{{ url('/admin/edit-article/'.$article->id) }}" class="btn btn-primary btn-mini">Edit</a> <a id="delCat" href="{{ url('/admin/delete-category/'.$article->id) }}" class="btn btn-danger btn-mini">Delete</a></td>
+                                        <td class="center">
+                                            <a href="{{ url('/admin/edit-article/'.$article->id) }}" class="btn btn-primary btn-mini">Edit</a>
+                                            <a href="{{ url('/admin/delete-article/'.$article->id) }}" id="delArticle" class="btn btn-danger btn-mini">Delete</a>
+                                        </td>
                                     </tr>
                                 @endforeach
                                 </tbody>

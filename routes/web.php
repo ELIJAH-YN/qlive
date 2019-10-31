@@ -13,9 +13,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('qlive.index');
-});
+Route::get('/','PageController@index');
 
 Route::match(['get','post'],'/admin','Admin\AdminController@login');
 
@@ -36,8 +34,12 @@ Route::match(['get','post'],'/admin','Admin\AdminController@login');
      Route::match(['get','post'],'/admin/add-article','ArticleController@addArticle');
      Route::match(['get','post'],'/admin/edit-article/{id}','ArticleController@editArticle');
      Route::get('/admin/view-articles','ArticleController@viewArticles');
+     Route::get('/admin/delete-article/{id}','ArticleController@deleteArticle');
      Route::get('/admin/delete-article-cover/{id}','ArticleController@deleteArticleCover');
  });
+
+// //Model form
+Route::get('/qlive/model-form','ModelformController@index');
 
 Route::get('/logout', 'Admin\AdminController@logout');
 

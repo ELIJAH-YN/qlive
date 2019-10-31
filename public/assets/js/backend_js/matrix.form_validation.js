@@ -205,4 +205,65 @@ $(document).ready(function(){
         }
         return false;
     })
+
+    $("#delArticle").click(function () {
+        if (confirm('Are you sure you want to delete this Article?')) {
+            return true;
+        }
+        return false;
+    })
+
+    // $(".deleteRecord").click(function () {
+    //     var id = $(this).attr('rel');
+    //     var deleteFunction = $(this).attr('rel1');
+    //     Swal.fire({
+    //         title: "Are you sure?",
+    //         text: "You wil not be able to recover this record again!",
+    //         type: "warning",
+    //         showCancelButton: true,
+    //         confirmButtonClass: "btn-danger",
+    //         confirmButtonText: "Yes, delete it!"
+    //     },
+    //         function () {
+    //            window.location.href="/admin/" + deleteFunction + "/" + id;
+    //         });
+    // });
+
+    $(document).ready(function(){
+        var maxField = 10; //Input fields increment limitation
+        var addButton = $('.add_button'); //Add button selector
+        var wrapper = $('.field_wrapper'); //Input field wrapper
+        var fieldHTML = '' +
+            '<div class="controls">' +
+            '<input type="text" name="description[]" id="description" placeholder="段落文字">' +
+            '<div class="uploader" id="uniform-cover">' +
+            '<div class="uploader" id="uniform-cover">' +
+            '<input type="file" name="cover[]" id="cover" size="19" style="opacity: 0;">' +
+            '<span class="filename">No file selected</span>' +
+            '<span class="action">Choose File</span>' +
+            '</div>' +
+            '<span class="filename">No file selected</span>' +
+            '<span class="action">Choose File</span>' +
+            '</div>' +
+            '<a href="javascript:void(0);" class="remove_button">Remove</a>' +
+            '</div>';
+        var x = 1; //Initial field counter is 1
+
+        //Once add button is clicked
+        $(addButton).click(function(){
+            //Check maximum number of input fields
+            if(x < maxField){
+                x++; //Increment field counter
+                $(wrapper).append(fieldHTML); //Add field html
+            }
+        });
+
+        //Once remove button is clicked
+        $(wrapper).on('click', '.remove_button', function(e){
+            e.preventDefault();
+            $(this).parent('div').remove(); //Remove field html
+            x--; //Decrement field counter
+        });
+    });
+
 });

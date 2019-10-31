@@ -51,224 +51,152 @@
                     Q網紅人
                 </div>
                 <div class="row ">
-                    <div class="col-md-3 ">
-                        <div class="thumbnail ">
-                            <a href="# " class="imgbox ">
-                                <div class="imgbox__inner imgbox__inner-16-9">
-                                    <div class="image " style="background-image: url( 'images/img1.jpg'); "></div>
-                                </div>
-                            </a>
-                            <a href="# " class="thumbnail__info ">
-                                <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>
-                                
-                            </a>
-                            
-
-                        </div>
-                    </div>
-                    <div class="col-md-3 ">
-                        <div class="thumbnail ">
-                            <div class="row ">
-                                <div class="col-5 col-md-12 ">
-                                    <a href="# " class="imgbox ">
-                                        <div class="imgbox__inner imgbox__inner-16-9 ">
-                                            <div class="image " style="background-image: url( 'images/img2.jpg'); "></div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-7 col-md-12 ">
-                                    <a href="# " class="thumbnail__info ">
-
-                                        <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>
-                                        <!-- <p class="thumbnail__preview ">際最深自的領，這院領傷化現覺圖明中易，巴就在是？關劇著象形</p> -->
-                                    </a>
-                                    <!-- <div class="thumbnail__bottom  thumbnail_bottom_s thumbnail_bottom_s ">
-                                        <div class="thumbnail__bottom-sort ">
-                                            <a href="# ">潮物</a>
-                                            <a href="# ">Bogi</a>
-                                        </div>
-                                        <div class="thumbnail__bottom-time ">
-                                            14hours ago
-                                        </div>
-                                    </div> -->
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
+                    @foreach($articleIndex_1 as $article)
+{{--                    <div class="col-md-3 ">--}}
+{{--                        <div class="thumbnail ">--}}
+{{--                            <a href="# " class="imgbox ">--}}
+{{--                                <div class="imgbox__inner imgbox__inner-16-9">--}}
+{{--                                    <div class="image " style="background-image: url( 'images/img1.jpg'); "></div>--}}
+{{--                                </div>--}}
+{{--                            </a>--}}
+{{--                            <a href="# " class="thumbnail__info ">--}}
+{{--                                <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>--}}
+{{--                            </a>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
                     <div class="col-md-3 ">
                         <div class="thumbnail ">
                             <div class="row ">
                                 <div class="col-5 col-md-12 ">
                                     <a href="# " class="imgbox ">
                                         <div class="imgbox__inner imgbox__inner-16-9 ">
-                                            <div class="image " style="background-image: url( 'images/img3.jpg'); "></div>
+{{--                                            <div class="image " style="background-image: url( 'images/img2.jpg'); "></div>--}}
+                                            <div class="image" ><img src="{{ asset('/assets/images/cover/small/'.$article->cover) }}" alt=""></div>
                                         </div>
                                     </a>
                                 </div>
                                 <div class="col-7 col-md-12 ">
                                     <a href="# " class="thumbnail__info ">
-                                        <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>
-                                        <!-- <p class="thumbnail__preview ">際最深自的領，這院領傷化現覺圖明中易，巴就在是？關劇著象形</p> -->
+                                        <h6 class="thumbnail__title">{{ $article->title }}</h6>
                                     </a>
-                                    <!-- <div class="thumbnail__bottom  thumbnail_bottom_s ">
-                                        <div class="thumbnail__bottom-sort ">
-                                            <a href="# ">潮物</a>
-                                            <a href="# ">Bogi</a>
-                                        </div>
-                                        <div class="thumbnail__bottom-time ">
-                                            14hours ago
-                                        </div>
-                                    </div> -->
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 ">
-                        <div class="thumbnail ">
-                            <div class="row ">
-                                <div class="col-5 col-md-12 ">
-                                    <a href="# " class="imgbox ">
-                                        <div class="imgbox__inner imgbox__inner-16-9">
-                                            <div class="image " style="background-image: url( 'images/img4.jpg'); "></div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-7 col-md-12 ">
-                                    <a href="# " class="thumbnail__info ">
-                                        <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>
-                                        <!-- <p class="thumbnail__preview ">際最深自的領，這院領傷化現覺圖明中易，巴就在是？關劇著象形</p> -->
-                                    </a>
-                                    <!-- <div class="thumbnail__bottom  thumbnail_bottom_s ">
-                                        <div class="thumbnail__bottom-sort ">
-                                            <a href="# ">潮物</a>
-                                            <a href="# ">Bogi</a>
-                                        </div>
-                                        <div class="thumbnail__bottom-time ">
-                                            14hours ago
-                                        </div>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
+                    {{--                    <div class="col-md-3 ">--}}
+{{--                        <div class="thumbnail ">--}}
+{{--                            <div class="row ">--}}
+{{--                                <div class="col-5 col-md-12 ">--}}
+{{--                                    <a href="# " class="imgbox ">--}}
+{{--                                        <div class="imgbox__inner imgbox__inner-16-9 ">--}}
+{{--                                            <div class="image " style="background-image: url( 'images/img3.jpg'); "></div>--}}
+{{--                                        </div>--}}
+{{--                                    </a>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-7 col-md-12 ">--}}
+{{--                                    <a href="# " class="thumbnail__info ">--}}
+{{--                                        <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>--}}
+{{--                                    </a>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="col-md-3 ">--}}
+{{--                        <div class="thumbnail ">--}}
+{{--                            <div class="row ">--}}
+{{--                                <div class="col-5 col-md-12 ">--}}
+{{--                                    <a href="# " class="imgbox ">--}}
+{{--                                        <div class="imgbox__inner imgbox__inner-16-9">--}}
+{{--                                            <div class="image " style="background-image: url( 'images/img4.jpg'); "></div>--}}
+{{--                                        </div>--}}
+{{--                                    </a>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-7 col-md-12 ">--}}
+{{--                                    <a href="# " class="thumbnail__info ">--}}
+{{--                                        <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>--}}
+{{--                                    </a>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
                 </div>
-                <div class="row ">
-                    <div class="col-md-3 ">
-                        <div class="thumbnail ">
-                            <div class="row ">
-                                <div class="col-5 col-md-12 ">
-                                    <a href="# " class="imgbox ">
-                                        <div class="imgbox__inner imgbox__inner-16-9 ">
-                                            <div class="image " style="background-image: url( 'images/img5.jpg'); "></div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-7 col-md-12 ">
-                                    <a href="# " class="thumbnail__info ">
-                                        <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>
-                                        <!-- <p class="thumbnail__preview ">際最深自的領，這院領傷化現覺圖明中易，巴就在是？關劇著象形</p> -->
-                                    </a>
-                                    <!-- <div class="thumbnail__bottom  thumbnail_bottom_s ">
-                                        <div class="thumbnail__bottom-sort ">
-                                            <a href="# ">潮物</a>
-                                            <a href="# ">Bogi</a>
-                                        </div>
-                                        <div class="thumbnail__bottom-time ">
-                                            14hours ago
-                                        </div>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 ">
-                        <div class="thumbnail ">
-                            <div class="row ">
-                                <div class="col-5 col-md-12 ">
-                                    <a href="# " class="imgbox ">
-                                        <div class="imgbox__inner imgbox__inner-16-9 ">
-                                            <div class="image " style="background-image: url( 'images/img6.jpg'); "></div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-7 col-md-12 ">
-                                    <a href="# " class="thumbnail__info ">
-                                        <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>
-                                        <!-- <p class="thumbnail__preview ">際最深自的領，這院領傷化現覺圖明中易，巴就在是？關劇著象形</p> -->
-                                    </a>
-                                    <!-- <div class="thumbnail__bottom  thumbnail_bottom_s ">
-                                        <div class="thumbnail__bottom-sort ">
-                                            <a href="# ">潮物</a>
-                                            <a href="# ">Bogi</a>
-                                        </div>
-                                        <div class="thumbnail__bottom-time ">
-                                            14hours ago
-                                        </div>
-                                    </div> -->
-                                </div>
-                            </div>
+{{--                <div class="row ">--}}
+{{--                    <div class="col-md-3 ">--}}
+{{--                        <div class="thumbnail ">--}}
+{{--                            <div class="row ">--}}
+{{--                                <div class="col-5 col-md-12 ">--}}
+{{--                                    <a href="# " class="imgbox ">--}}
+{{--                                        <div class="imgbox__inner imgbox__inner-16-9 ">--}}
+{{--                                            <div class="image " style="background-image: url( 'images/img5.jpg'); "></div>--}}
+{{--                                        </div>--}}
+{{--                                    </a>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-7 col-md-12 ">--}}
+{{--                                    <a href="# " class="thumbnail__info ">--}}
+{{--                                        <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>--}}
+{{--                                    </a>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="col-md-3 ">--}}
+{{--                        <div class="thumbnail ">--}}
+{{--                            <div class="row ">--}}
+{{--                                <div class="col-5 col-md-12 ">--}}
+{{--                                    <a href="# " class="imgbox ">--}}
+{{--                                        <div class="imgbox__inner imgbox__inner-16-9 ">--}}
+{{--                                            <div class="image " style="background-image: url( 'images/img6.jpg'); "></div>--}}
+{{--                                        </div>--}}
+{{--                                    </a>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-7 col-md-12 ">--}}
+{{--                                    <a href="# " class="thumbnail__info ">--}}
+{{--                                        <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>--}}
+{{--                                    </a>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
 
-                        </div>
-                    </div>
-                    <div class="col-md-3 ">
-                        <div class="thumbnail ">
-                            <div class="row ">
-                                <div class="col-5 col-md-12 ">
-                                    <a href="# " class="imgbox ">
-                                        <div class="imgbox__inner imgbox__inner-16-9 ">
-                                            <div class="image " style="background-image: url( 'images/img7.jpg'); "></div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-7 col-md-12 ">
-                                    <a href="# " class="thumbnail__info ">
-                                        <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>
-                                        <!-- <p class="thumbnail__preview ">際最深自的領，這院領傷化現覺圖明中易，巴就在是？關劇著象形</p> -->
-                                    </a>
-                                    <!-- <div class="thumbnail__bottom  thumbnail_bottom_s ">
-                                        <div class="thumbnail__bottom-sort ">
-                                            <a href="# ">潮物</a>
-                                            <a href="# ">Bogi</a>
-                                        </div>
-                                        <div class="thumbnail__bottom-time ">
-                                            14hours ago
-                                        </div>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 ">
-                        <div class="thumbnail ">
-                            <div class="row ">
-                                <div class="col-5 col-md-12 ">
-                                    <a href="# " class="imgbox ">
-                                        <div class="imgbox__inner imgbox__inner-16-9">
-                                            <div class="image " style="background-image: url( 'images/img8.jpg'); "></div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-7 col-md-12 ">
-                                    <a href="# " class="thumbnail__info ">
-                                        <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>
-                                        <!-- <p class="thumbnail__preview ">際最深自的領，這院領傷化現覺圖明中易，巴就在是？關劇著象形</p> -->
-                                    </a>
-                                    <!-- <div class="thumbnail__bottom  thumbnail_bottom_s ">
-                                        <div class="thumbnail__bottom-sort ">
-                                            <a href="# ">潮物</a>
-                                            <a href="# ">Bogi</a>
-                                        </div>
-                                        <div class="thumbnail__bottom-time ">
-                                            14hours ago
-                                        </div>
-                                    </div> -->
-                                </div>
-                            </div>
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="col-md-3 ">--}}
+{{--                        <div class="thumbnail ">--}}
+{{--                            <div class="row ">--}}
+{{--                                <div class="col-5 col-md-12 ">--}}
+{{--                                    <a href="# " class="imgbox ">--}}
+{{--                                        <div class="imgbox__inner imgbox__inner-16-9 ">--}}
+{{--                                            <div class="image " style="background-image: url( 'images/img7.jpg'); "></div>--}}
+{{--                                        </div>--}}
+{{--                                    </a>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-7 col-md-12 ">--}}
+{{--                                    <a href="# " class="thumbnail__info ">--}}
+{{--                                        <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>--}}
+{{--                                    </a>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="col-md-3 ">--}}
+{{--                        <div class="thumbnail ">--}}
+{{--                            <div class="row ">--}}
+{{--                                <div class="col-5 col-md-12 ">--}}
+{{--                                    <a href="# " class="imgbox ">--}}
+{{--                                        <div class="imgbox__inner imgbox__inner-16-9">--}}
+{{--                                            <div class="image " style="background-image: url( 'images/img8.jpg'); "></div>--}}
+{{--                                        </div>--}}
+{{--                                    </a>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-7 col-md-12 ">--}}
+{{--                                    <a href="# " class="thumbnail__info ">--}}
+{{--                                        <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>--}}
+{{--                                    </a>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
 
-                        </div>
-                    </div>
-                </div>
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
                 <div class="btn-group--center ">
                     <div class="btn btn--primary btn--md ">想看更多Q網紅人？</div>
                 </div>
@@ -400,230 +328,150 @@
                     當紅潮流
                 </div>
                 <div class="row ">
-                    <div class="col-md-3 ">
-                        <div class="thumbnail ">
-                            <a href="# " class="imgbox ">
-                                <div class="imgbox__inner imgbox__inner-16-9">
-                                    <div class="image " style="background-image: url( 'images/img9.jpg'); "></div>
-                                </div>
-                            </a>
-                            <a href="# " class="thumbnail__info ">
-                                <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>
-                                <!-- <p class="thumbnail__preview ">際最深自的領，這院領傷化現覺圖明中易，巴就在是？關劇著象形</p> -->
-                            </a>
-                            <!-- <div class="thumbnail__bottom ">
-                                <div class="thumbnail__bottom-sort ">
-                                    <a href="# ">潮物</a>
-                                    <a href="# ">Bogi</a>
-                                </div>
-                                <div class="thumbnail__bottom-time ">
-                                    14hours ago
-                                </div>
-                            </div> -->
-
-                        </div>
-                    </div>
+{{--                    <div class="col-md-3 ">--}}
+{{--                        <div class="thumbnail ">--}}
+{{--                            <a href="# " class="imgbox ">--}}
+{{--                                <div class="imgbox__inner imgbox__inner-16-9">--}}
+{{--                                    <div class="image " style="background-image: url( 'images/img9.jpg'); "></div>--}}
+{{--                                </div>--}}
+{{--                            </a>--}}
+{{--                            <a href="# " class="thumbnail__info ">--}}
+{{--                                <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>--}}
+{{--                            </a>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+                    @foreach($articleIndex_2 as $article)
                     <div class="col-md-3 ">
                         <div class="thumbnail ">
                             <div class="row ">
                                 <div class="col-5 col-md-12 ">
                                     <a href="# " class="imgbox ">
                                         <div class="imgbox__inner imgbox__inner-16-9">
-                                            <div class="image " style="background-image: url( 'images/img10.jpg'); "></div>
+                                            <div class="image"><img src="{{ asset('/assets/images/cover/small/'.$article->cover) }}" alt=""></div>
                                         </div>
                                     </a>
                                 </div>
                                 <div class="col-7 col-md-12 ">
                                     <a href="# " class="thumbnail__info ">
-                                        <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>
-                                        <!-- <p class="thumbnail__preview ">際最深自的領，這院領傷化現覺圖明中易，巴就在是？關劇著象形</p> -->
+                                        <h6 class="thumbnail__title">{{ $article->title }}</h6>
                                     </a>
-                                    <!-- <div class="thumbnail__bottom thumbnail_bottom_s ">
-                                        <div class="thumbnail__bottom-sort ">
-                                            <a href="# ">潮物</a>
-                                            <a href="# ">Bogi</a>
-                                        </div>
-                                        <div class="thumbnail__bottom-time ">
-                                            14hours ago
-                                        </div>
-                                    </div> -->
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    @endforeach
+{{--                    <div class="col-md-3 ">--}}
+{{--                        <div class="thumbnail ">--}}
+{{--                            <div class="row ">--}}
+{{--                                <div class="col-5 col-md-12 ">--}}
+{{--                                    <a href="# " class="imgbox ">--}}
+{{--                                        <div class="imgbox__inner imgbox__inner-16-9 ">--}}
+{{--                                            <div class="image " style="background-image: url( 'images/img11.jpg'); "></div>--}}
+{{--                                        </div>--}}
+{{--                                    </a>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-7 col-md-12 ">--}}
+{{--                                    <a href="#" class="thumbnail__info ">--}}
+{{--                                        <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>--}}
+{{--                                    </a>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
 
-                        </div>
-                    </div>
-                    <div class="col-md-3 ">
-                        <div class="thumbnail ">
-                            <div class="row ">
-                                <div class="col-5 col-md-12 ">
-                                    <a href="# " class="imgbox ">
-                                        <div class="imgbox__inner imgbox__inner-16-9 ">
-                                            <div class="image " style="background-image: url( 'images/img11.jpg'); "></div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-7 col-md-12 ">
-                                    <a href="#" class="thumbnail__info ">
-                                        <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>
-                                        <!-- <p class="thumbnail__preview ">際最深自的領，這院領傷化現覺圖明中易，巴就在是？關劇著象形</p> -->
-                                    </a>
-                                    <!-- <div class="thumbnail__bottom thumbnail_bottom_s ">
-                                        <div class="thumbnail__bottom-sort ">
-                                            <a href="# ">潮物</a>
-                                            <a href="# ">Bogi</a>
-                                        </div>
-                                        <div class="thumbnail__bottom-time ">
-                                            14hours ago
-                                        </div>
-                                    </div> -->
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-md-3 ">
-                        <div class="thumbnail ">
-                            <div class="row ">
-                                <div class="col-5 col-md-12 ">
-                                    <a href="# " class="imgbox ">
-                                        <div class="imgbox__inner imgbox__inner-16-9 ">
-                                            <div class="image " style="background-image: url( 'images/img12.jpg'); "></div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-7 col-md-12 ">
-                                    <a href="# " class="thumbnail__info ">
-                                        <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>
-                                        <!-- <p class="thumbnail__preview ">際最深自的領，這院領傷化現覺圖明中易，巴就在是？關劇著象形</p> -->
-                                    </a>
-                                    <!-- <div class="thumbnail__bottom thumbnail_bottom_s ">
-                                        <div class="thumbnail__bottom-sort ">
-                                            <a href="# ">潮物</a>
-                                            <a href="# ">Bogi</a>
-                                        </div>
-                                        <div class="thumbnail__bottom-time ">
-                                            14hours ago
-                                        </div>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="col-md-3 ">--}}
+{{--                        <div class="thumbnail ">--}}
+{{--                            <div class="row ">--}}
+{{--                                <div class="col-5 col-md-12 ">--}}
+{{--                                    <a href="# " class="imgbox ">--}}
+{{--                                        <div class="imgbox__inner imgbox__inner-16-9 ">--}}
+{{--                                            <div class="image " style="background-image: url( 'images/img12.jpg'); "></div>--}}
+{{--                                        </div>--}}
+{{--                                    </a>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-7 col-md-12 ">--}}
+{{--                                    <a href="# " class="thumbnail__info ">--}}
+{{--                                        <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>--}}
+{{--                                    </a>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
                 </div>
-                <div class="row ">
-                    <div class="col-md-3 ">
-                        <div class="thumbnail ">
-                            <div class="row ">
-                                <div class="col-5 col-md-12 ">
-                                    <a href="# " class="imgbox ">
-                                        <div class="imgbox__inner imgbox__inner-16-9 ">
-                                            <div class="image " style="background-image: url( 'images/img13.jpg'); "></div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-7 col-md-12 ">
-                                    <a href="# " class="thumbnail__info ">
-                                        <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>
-                                        <!-- <p class="thumbnail__preview ">際最深自的領，這院領傷化現覺圖明中易，巴就在是？關劇著象形</p> -->
-                                    </a>
-                                    <!-- <div class="thumbnail__bottom thumbnail_bottom_s ">
-                                        <div class="thumbnail__bottom-sort ">
-                                            <a href="# ">潮物</a>
-                                            <a href="# ">Bogi</a>
-                                        </div>
-                                        <div class="thumbnail__bottom-time ">
-                                            14hours ago
-                                        </div>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 ">
-                        <div class="thumbnail ">
-                            <div class="row ">
-                                <div class="col-5 col-md-12 ">
-                                    <a href="# " class="imgbox ">
-                                        <div class="imgbox__inner imgbox__inner-16-9 ">
-                                            <div class="image " style="background-image: url( 'images/img14.jpg'); "></div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-7 col-md-12 ">
-                                    <a href="# " class="thumbnail__info ">
-                                        <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>
-                                        <!-- <p class="thumbnail__preview ">際最深自的領，這院領傷化現覺圖明中易，巴就在是？關劇著象形</p> -->
-                                    </a>
-                                    <!-- <div class="thumbnail__bottom thumbnail_bottom_s ">
-                                        <div class="thumbnail__bottom-sort ">
-                                            <a href="# ">潮物</a>
-                                            <a href="# ">Bogi</a>
-                                        </div>
-                                        <div class="thumbnail__bottom-time ">
-                                            14hours ago
-                                        </div>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 ">
-                        <div class="thumbnail ">
-                            <div class="row ">
-                                <div class="col-5 col-md-12 ">
-                                    <a href="# " class="imgbox ">
-                                        <div class="imgbox__inner imgbox__inner-16-9 ">
-                                            <div class="image " style="background-image: url( 'images/img15.jpg'); "></div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-7 col-md-12 ">
-                                    <a href="# " class="thumbnail__info ">
-                                        <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>
-                                        <!-- <p class="thumbnail__preview ">際最深自的領，這院領傷化現覺圖明中易，巴就在是？關劇著象形</p> -->
-                                    </a>
-                                    <!-- <div class="thumbnail__bottom thumbnail_bottom_s ">
-                                        <div class="thumbnail__bottom-sort ">
-                                            <a href="# ">潮物</a>
-                                            <a href="# ">Bogi</a>
-                                        </div>
-                                        <div class="thumbnail__bottom-time ">
-                                            14hours ago
-                                        </div>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 ">
-                        <div class="thumbnail ">
-                            <div class="row ">
-                                <div class="col-5 col-md-12 ">
-                                    <a href="# " class="imgbox ">
-                                        <div class="imgbox__inner imgbox__inner-16-9 ">
-                                            <div class="image " style="background-image: url( 'images/img16.jpg'); "></div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-7 col-md-12 ">
-                                    <a href="# " class="thumbnail__info ">
-                                        <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>
-                                        <!-- <p class="thumbnail__preview ">際最深自的領，這院領傷化現覺圖明中易，巴就在是？關劇著象形</p> -->
-                                    </a>
-                                    <!-- <div class="thumbnail__bottom thumbnail_bottom_s ">
-                                        <div class="thumbnail__bottom-sort ">
-                                            <a href="# ">潮物</a>
-                                            <a href="# ">Bogi</a>
-                                        </div>
-                                        <div class="thumbnail__bottom-time ">
-                                            14hours ago
-                                        </div>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+{{--                <div class="row ">--}}
+{{--                    <div class="col-md-3 ">--}}
+{{--                        <div class="thumbnail ">--}}
+{{--                            <div class="row ">--}}
+{{--                                <div class="col-5 col-md-12 ">--}}
+{{--                                    <a href="# " class="imgbox ">--}}
+{{--                                        <div class="imgbox__inner imgbox__inner-16-9 ">--}}
+{{--                                            <div class="image " style="background-image: url( 'images/img13.jpg'); "></div>--}}
+{{--                                        </div>--}}
+{{--                                    </a>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-7 col-md-12 ">--}}
+{{--                                    <a href="# " class="thumbnail__info ">--}}
+{{--                                        <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>--}}
+{{--                                    </a>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="col-md-3 ">--}}
+{{--                        <div class="thumbnail ">--}}
+{{--                            <div class="row ">--}}
+{{--                                <div class="col-5 col-md-12 ">--}}
+{{--                                    <a href="# " class="imgbox ">--}}
+{{--                                        <div class="imgbox__inner imgbox__inner-16-9 ">--}}
+{{--                                            <div class="image " style="background-image: url( 'images/img14.jpg'); "></div>--}}
+{{--                                        </div>--}}
+{{--                                    </a>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-7 col-md-12 ">--}}
+{{--                                    <a href="# " class="thumbnail__info ">--}}
+{{--                                        <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>--}}
+{{--                                    </a>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="col-md-3 ">--}}
+{{--                        <div class="thumbnail ">--}}
+{{--                            <div class="row ">--}}
+{{--                                <div class="col-5 col-md-12 ">--}}
+{{--                                    <a href="# " class="imgbox ">--}}
+{{--                                        <div class="imgbox__inner imgbox__inner-16-9 ">--}}
+{{--                                            <div class="image " style="background-image: url( 'images/img15.jpg'); "></div>--}}
+{{--                                        </div>--}}
+{{--                                    </a>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-7 col-md-12 ">--}}
+{{--                                    <a href="# " class="thumbnail__info ">--}}
+{{--                                        <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>--}}
+{{--                                    </a>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="col-md-3 ">--}}
+{{--                        <div class="thumbnail ">--}}
+{{--                            <div class="row ">--}}
+{{--                                <div class="col-5 col-md-12 ">--}}
+{{--                                    <a href="# " class="imgbox ">--}}
+{{--                                        <div class="imgbox__inner imgbox__inner-16-9 ">--}}
+{{--                                            <div class="image " style="background-image: url( 'images/img16.jpg'); "></div>--}}
+{{--                                        </div>--}}
+{{--                                    </a>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-7 col-md-12 ">--}}
+{{--                                    <a href="# " class="thumbnail__info ">--}}
+{{--                                        <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>--}}
+{{--                                    </a>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
                 <div class="btn-group--center ">
                     <div class="btn btn--primary btn--md ">想看更多當紅潮流？</div>
                 </div>
@@ -639,229 +487,181 @@
                     去你的玩
                 </div>
                 <div class="row ">
+{{--                    <div class="col-md-3 ">--}}
+{{--                        <div class="thumbnail ">--}}
+{{--                            <a href="# " class="imgbox ">--}}
+{{--                                <div class="imgbox__inner imgbox__inner-16-9 ">--}}
+{{--                                    <div class="image " style="background-image: url( 'images/img17.jpg'); "></div>--}}
+{{--                                </div>--}}
+{{--                            </a>--}}
+{{--                            <a href="# " class="thumbnail__info ">--}}
+{{--                                <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>--}}
+{{--                            </a>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+                    @foreach($articleIndex_3 as $article)
                     <div class="col-md-3 ">
                         <div class="thumbnail ">
-                            <a href="# " class="imgbox ">
-                                <div class="imgbox__inner imgbox__inner-16-9 ">
-                                    <div class="image " style="background-image: url( 'images/img17.jpg'); "></div>
+                            <div class="row ">
+                                <div class="col-5 col-md-12 ">
+                                    <a href="# " class="imgbox ">
+                                        <div class="imgbox__inner imgbox__inner-16-9 ">
+                                            <div class="image"><img src="{{ asset('/assets/images/cover/small/'.$article->cover) }}" alt=""></div>
+                                        </div>
+                                    </a>
                                 </div>
-                            </a>
-                            <a href="# " class="thumbnail__info ">
-                                <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>
-                                <!-- <p class="thumbnail__preview ">際最深自的領，這院領傷化現覺圖明中易，巴就在是？關劇著象形</p> -->
-                            </a>
-                            <!-- <div class="thumbnail__bottom ">
-                                <div class="thumbnail__bottom-sort ">
-                                    <a href="# ">潮物</a>
-                                    <a href="# ">Bogi</a>
+                                <div class="col-7 col-md-12 ">
+                                    <a href="# " class="thumbnail__info ">
+                                        <h6 class="thumbnail__title">{{ $article->title }}</h6>
+                                    </a>
                                 </div>
-                                <div class="thumbnail__bottom-time ">
-                                    14hours ago
-                                </div>
-                            </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    @endforeach
+{{--                    <div class="col-md-3 ">--}}
+{{--                        <div class="thumbnail ">--}}
+{{--                            <div class="row ">--}}
+{{--                                <div class="col-5 col-md-12 ">--}}
+{{--                                    <a href="# " class="imgbox ">--}}
+{{--                                        <div class="imgbox__inner imgbox__inner-16-9 ">--}}
+{{--                                            <div class="image " style="background-image: url( 'images/img19.jpg'); "></div>--}}
+{{--                                        </div>--}}
+{{--                                    </a>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-7 col-md-12 ">--}}
+{{--                                    <a href="# " class="thumbnail__info ">--}}
+{{--                                        <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>--}}
+{{--                                    </a>--}}
+{{--                                    </div> -->--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="col-md-3 ">--}}
+{{--                        <div class="thumbnail ">--}}
+{{--                            <div class="row ">--}}
+{{--                                <div class="col-5 col-md-12 ">--}}
+{{--                                    <a href="# " class="imgbox ">--}}
+{{--                                        <div class="imgbox__inner imgbox__inner-16-9 ">--}}
+{{--                                            <div class="image " style="background-image: url( 'images/img20.jpg'); "></div>--}}
+{{--                                        </div>--}}
+{{--                                    </a>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-7 col-md-12 ">--}}
+{{--                                    <a href="# " class="thumbnail__info ">--}}
+{{--                                        <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>--}}
+{{--                                    </a>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
 
-                        </div>
-                    </div>
-                    <div class="col-md-3 ">
-                        <div class="thumbnail ">
-                            <div class="row ">
-                                <div class="col-5 col-md-12 ">
-                                    <a href="# " class="imgbox ">
-                                        <div class="imgbox__inner imgbox__inner-16-9 ">
-                                            <div class="image " style="background-image: url( 'images/img18.jpg'); "></div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-7 col-md-12 ">
-                                    <a href="# " class="thumbnail__info ">
-                                        <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>
-                                        <!-- <p class="thumbnail__preview ">際最深自的領，這院領傷化現覺圖明中易，巴就在是？關劇著象形</p> -->
-                                    </a>
-                                    <!-- <div class="thumbnail__bottom thumbnail_bottom_s ">
-                                        <div class="thumbnail__bottom-sort ">
-                                            <a href="# ">潮物</a>
-                                            <a href="# ">Bogi</a>
-                                        </div>
-                                        <div class="thumbnail__bottom-time ">
-                                            14hours ago
-                                        </div>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 ">
-                        <div class="thumbnail ">
-                            <div class="row ">
-                                <div class="col-5 col-md-12 ">
-                                    <a href="# " class="imgbox ">
-                                        <div class="imgbox__inner imgbox__inner-16-9 ">
-                                            <div class="image " style="background-image: url( 'images/img19.jpg'); "></div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-7 col-md-12 ">
-                                    <a href="# " class="thumbnail__info ">
-                                        <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>
-                                        <!-- <p class="thumbnail__preview ">際最深自的領，這院領傷化現覺圖明中易，巴就在是？關劇著象形</p> -->
-                                    </a>
-                                    <!-- <div class="thumbnail__bottom thumbnail_bottom_s ">
-                                        <div class="thumbnail__bottom-sort ">
-                                            <a href="# ">潮物</a>
-                                            <a href="# ">Bogi</a>
-                                        </div>
-                                        <div class="thumbnail__bottom-time ">
-                                            14hours ago
-                                        </div>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 ">
-                        <div class="thumbnail ">
-                            <div class="row ">
-                                <div class="col-5 col-md-12 ">
-                                    <a href="# " class="imgbox ">
-                                        <div class="imgbox__inner imgbox__inner-16-9 ">
-                                            <div class="image " style="background-image: url( 'images/img20.jpg'); "></div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-7 col-md-12 ">
-                                    <a href="# " class="thumbnail__info ">
-                                        <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>
-                                        <!-- <p class="thumbnail__preview ">際最深自的領，這院領傷化現覺圖明中易，巴就在是？關劇著象形</p> -->
-                                    </a>
-                                    <!-- <div class="thumbnail__bottom thumbnail_bottom_s ">
-                                        <div class="thumbnail__bottom-sort ">
-                                            <a href="# ">潮物</a>
-                                            <a href="# ">Bogi</a>
-                                        </div>
-                                        <div class="thumbnail__bottom-time ">
-                                            14hours ago
-                                        </div>
-                                    </div> -->
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
+{{--                        </div>--}}
+{{--                    </div>--}}
                 </div>
-                <div class="row ">
-                    <div class="col-md-3 ">
-                        <div class="thumbnail ">
-                            <div class="row ">
-                                <div class="col-5 col-md-12 ">
-                                    <a href="# " class="imgbox ">
-                                        <div class="imgbox__inner imgbox__inner-16-9 ">
-                                            <div class="image " style="background-image: url( 'images/img21.jpg'); "></div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-7 col-md-12 ">
-                                    <a href="# " class="thumbnail__info ">
-                                        <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>
-                                        <!-- <p class="thumbnail__preview ">際最深自的領，這院領傷化現覺圖明中易，巴就在是？關劇著象形</p> -->
-                                    </a>
-                                    <!-- <div class="thumbnail__bottom thumbnail_bottom_s ">
-                                        <div class="thumbnail__bottom-sort ">
-                                            <a href="# ">潮物</a>
-                                            <a href="# ">Bogi</a>
-                                        </div>
-                                        <div class="thumbnail__bottom-time ">
-                                            14hours ago
-                                        </div>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 ">
-                        <div class="thumbnail ">
-                            <div class="row ">
-                                <div class="col-5 col-md-12 ">
-                                    <a href="# " class="imgbox ">
-                                        <div class="imgbox__inner imgbox__inner-16-9 ">
-                                            <div class="image " style="background-image: url( 'images/img22.jpg'); "></div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-7 col-md-12 ">
-                                    <a href="# " class="thumbnail__info ">
-                                        <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>
-                                        <!-- <p class="thumbnail__preview ">際最深自的領，這院領傷化現覺圖明中易，巴就在是？關劇著象形</p> -->
-                                    </a>
-                                    <!-- <div class="thumbnail__bottom thumbnail_bottom_s ">
-                                        <div class="thumbnail__bottom-sort ">
-                                            <a href="# ">潮物</a>
-                                            <a href="# ">Bogi</a>
-                                        </div>
-                                        <div class="thumbnail__bottom-time ">
-                                            14hours ago
-                                        </div>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 ">
-                        <div class="thumbnail ">
-                            <div class="row ">
-                                <div class="col-5 col-md-12 ">
-                                    <a href="# " class="imgbox ">
-                                        <div class="imgbox__inner imgbox__inner-16-9 ">
-                                            <div class="image " style="background-image: url( 'images/img23.jpg'); "></div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-7 col-md-12 ">
-                                    <a href="# " class="thumbnail__info ">
-                                        <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>
-                                        <!-- <p class="thumbnail__preview ">際最深自的領，這院領傷化現覺圖明中易，巴就在是？關劇著象形</p> -->
-                                    </a>
-                                    <!-- <div class="thumbnail__bottom thumbnail_bottom_s ">
-                                        <div class="thumbnail__bottom-sort ">
-                                            <a href="# ">潮物</a>
-                                            <a href="# ">Bogi</a>
-                                        </div>
-                                        <div class="thumbnail__bottom-time ">
-                                            14hours ago
-                                        </div>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 ">
-                        <div class="thumbnail ">
-                            <div class="row ">
-                                <div class="col-5 col-md-12 ">
-                                    <a href="# " class="imgbox ">
-                                        <div class="imgbox__inner imgbox__inner-16-9 ">
-                                            <div class="image " style="background-image: url( 'images/img24.jpg'); "></div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-7 col-md-12 ">
-                                    <a href="# " class="thumbnail__info ">
-                                        <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>
-                                        <!-- <p class="thumbnail__preview ">際最深自的領，這院領傷化現覺圖明中易，巴就在是？關劇著象形</p> -->
-                                    </a>
-                                    <!-- <div class="thumbnail__bottom thumbnail_bottom_s ">
-                                        <div class="thumbnail__bottom-sort ">
-                                            <a href="# ">潮物</a>
-                                            <a href="# ">Bogi</a>
-                                        </div>
-                                        <div class="thumbnail__bottom-time ">
-                                            14hours ago
-                                        </div>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+{{--                <div class="row ">--}}
+{{--                    <div class="col-md-3 ">--}}
+{{--                        <div class="thumbnail ">--}}
+{{--                            <div class="row ">--}}
+{{--                                <div class="col-5 col-md-12 ">--}}
+{{--                                    <a href="# " class="imgbox ">--}}
+{{--                                        <div class="imgbox__inner imgbox__inner-16-9 ">--}}
+{{--                                            <div class="image " style="background-image: url( 'images/img21.jpg'); "></div>--}}
+{{--                                        </div>--}}
+{{--                                    </a>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-7 col-md-12 ">--}}
+{{--                                    <a href="# " class="thumbnail__info ">--}}
+{{--                                        <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>--}}
+{{--                                    </a>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="col-md-3 ">--}}
+{{--                        <div class="thumbnail ">--}}
+{{--                            <div class="row ">--}}
+{{--                                <div class="col-5 col-md-12 ">--}}
+{{--                                    <a href="# " class="imgbox ">--}}
+{{--                                        <div class="imgbox__inner imgbox__inner-16-9 ">--}}
+{{--                                            <div class="image " style="background-image: url( 'images/img22.jpg'); "></div>--}}
+{{--                                        </div>--}}
+{{--                                    </a>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-7 col-md-12 ">--}}
+{{--                                    <a href="# " class="thumbnail__info ">--}}
+{{--                                        <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>--}}
+{{--                                        <!-- <p class="thumbnail__preview ">際最深自的領，這院領傷化現覺圖明中易，巴就在是？關劇著象形</p> -->--}}
+{{--                                    </a>--}}
+{{--                                    <!-- <div class="thumbnail__bottom thumbnail_bottom_s ">--}}
+{{--                                        <div class="thumbnail__bottom-sort ">--}}
+{{--                                            <a href="# ">潮物</a>--}}
+{{--                                            <a href="# ">Bogi</a>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="thumbnail__bottom-time ">--}}
+{{--                                            14hours ago--}}
+{{--                                        </div>--}}
+{{--                                    </div> -->--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="col-md-3 ">--}}
+{{--                        <div class="thumbnail ">--}}
+{{--                            <div class="row ">--}}
+{{--                                <div class="col-5 col-md-12 ">--}}
+{{--                                    <a href="# " class="imgbox ">--}}
+{{--                                        <div class="imgbox__inner imgbox__inner-16-9 ">--}}
+{{--                                            <div class="image " style="background-image: url( 'images/img23.jpg'); "></div>--}}
+{{--                                        </div>--}}
+{{--                                    </a>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-7 col-md-12 ">--}}
+{{--                                    <a href="# " class="thumbnail__info ">--}}
+{{--                                        <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>--}}
+{{--                                        <!-- <p class="thumbnail__preview ">際最深自的領，這院領傷化現覺圖明中易，巴就在是？關劇著象形</p> -->--}}
+{{--                                    </a>--}}
+{{--                                    <!-- <div class="thumbnail__bottom thumbnail_bottom_s ">--}}
+{{--                                        <div class="thumbnail__bottom-sort ">--}}
+{{--                                            <a href="# ">潮物</a>--}}
+{{--                                            <a href="# ">Bogi</a>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="thumbnail__bottom-time ">--}}
+{{--                                            14hours ago--}}
+{{--                                        </div>--}}
+{{--                                    </div> -->--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="col-md-3 ">--}}
+{{--                        <div class="thumbnail ">--}}
+{{--                            <div class="row ">--}}
+{{--                                <div class="col-5 col-md-12 ">--}}
+{{--                                    <a href="# " class="imgbox ">--}}
+{{--                                        <div class="imgbox__inner imgbox__inner-16-9 ">--}}
+{{--                                            <div class="image " style="background-image: url( 'images/img24.jpg'); "></div>--}}
+{{--                                        </div>--}}
+{{--                                    </a>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-7 col-md-12 ">--}}
+{{--                                    <a href="# " class="thumbnail__info ">--}}
+{{--                                        <h6 class="thumbnail__title">文字標題文字標題文字標題文字文字標題文字標題文字標題文字</h6>--}}
+{{--                                        <!-- <p class="thumbnail__preview ">際最深自的領，這院領傷化現覺圖明中易，巴就在是？關劇著象形</p> -->--}}
+{{--                                    </a>--}}
+{{--                                    <!-- <div class="thumbnail__bottom thumbnail_bottom_s ">--}}
+{{--                                        <div class="thumbnail__bottom-sort ">--}}
+{{--                                            <a href="# ">潮物</a>--}}
+{{--                                            <a href="# ">Bogi</a>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="thumbnail__bottom-time ">--}}
+{{--                                            14hours ago--}}
+{{--                                        </div>--}}
+{{--                                    </div> -->--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
                 <div class="btn-group--center ">
                     <div class="btn btn--primary btn--md ">想看更多去你的玩？</div>
                 </div>

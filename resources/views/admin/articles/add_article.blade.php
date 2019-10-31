@@ -52,6 +52,17 @@
                                 <label class="control-label">文章內容</label>
                                 <div class="controls">
                                     <textarea name="description" id="description"></textarea>
+{{--                                    <textarea name="description" id="editor">This is some sample content.</textarea>--}}
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label"></label>
+                                <div class="field_wrapper">
+                                    <div class="controls">
+                                        <input type="text" name="description[]" id="description" placeholder="段落文字">
+                                        <input type="file" name="cover[]" id="cover">
+                                        <a href="javascript:void(0);" class="add_button" title="Add field">Add</a>
+                                    </div>
                                 </div>
                             </div>
 {{--                            <div class="control-group">--}}

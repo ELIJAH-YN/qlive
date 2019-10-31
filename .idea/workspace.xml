@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f98719e0-d6b4-445d-af2e-e305570119ac" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/chillwiing.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/chillwiing.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/backend_css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/backend_css/bootstrap.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/js/backend_js/matrix.form_validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/backend_js/matrix.form_validation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/articles/add_article.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/articles/add_article.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/articles/edit_article.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/articles/edit_article.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/articles/view_articles.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/articles/view_articles.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/categories/view_categories.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/categories/view_categories.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/adminLayout/admin_design.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/adminLayout/admin_design.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/adminLayout/admin_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/adminLayout/admin_sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/qliveLayout/qlive_design.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/qliveLayout/qlive_design.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/qlive/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/qlive/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -136,6 +142,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -177,7 +184,9 @@
       <workItem from="1571851452689" duration="14641000" />
       <workItem from="1572022422762" duration="63000" />
       <workItem from="1572155961180" duration="10718000" />
-      <workItem from="1572248607066" duration="23587000" />
+      <workItem from="1572248607066" duration="44394000" />
+      <workItem from="1572488777434" duration="340000" />
+      <workItem from="1572489154462" duration="4452000" />
     </task>
     <servers />
   </component>
