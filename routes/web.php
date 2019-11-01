@@ -41,6 +41,14 @@ Route::match(['get','post'],'/admin','Admin\AdminController@login');
 // //Model form
 Route::get('/qlive/model-form','ModelformController@index');
 
+// Index page
+Route::get('/qlive/innerpage-page','PageController@innerpageIndex');
+Route::get('/qlive/trending-page','PageController@trendingIndex');
+Route::get('/qlive/search-page','PageController@searchIndex');
+Route::get('/qlive/onlineform-page','PageController@onlineformIndex');
+Route::get('/qlive/check-page','PageController@checkIndex');
+Route::get('/qlive/modelcard-page','PageController@modelcardIndex');
+
 Route::get('/logout', 'Admin\AdminController@logout');
 
 Auth::routes();
