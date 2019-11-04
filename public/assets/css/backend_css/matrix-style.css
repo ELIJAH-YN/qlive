@@ -114,7 +114,7 @@ hr{ border-top-color:#dadada;}
 #user-nav > ul > li > a {
 	padding:9px 10px;
 	display: block;
-	font-size: 11px;
+	font-size: 14px;
 }
 #user-nav > ul > li > a:hover, #user-nav > ul > li.open > a {
 	color: #ffffff;  background:#000;
@@ -1142,6 +1142,10 @@ form {
 }
 .form-horizontal input[type=text], .form-horizontal input[type=password], .form-horizontal textarea {
 }
+.form-horizontal textarea {
+	resize:none;
+	height:150px;
+}
 .row-fluid .span20 {
 	width:97.8%
 }
@@ -1552,6 +1556,13 @@ body {
 }
 #sidebar .content{ display:none;}
 }
+
+@media (max-width: 970px) {
+	#user-nav > ul > li > a > span.text {
+		display: none;
+	}
+}
+
 @media (max-width: 767px) {
 body {
 	padding: 0 !important;
@@ -1563,9 +1574,7 @@ body {
 #search {
 	display: none;
 }
-#user-nav > ul > li > a > span.text {
-	display: none;
-}
+
 #sidebar .content{ display:none;}
 }
 @media (min-width: 768px) and (max-width: 979px) {

@@ -993,7 +993,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
     padding: 4px 6px;
     margin-bottom: 10px;
     font-size: 14px;
-    line-height: 100px;
+    /* line-height: 100px; */
     color: #555;
     vertical-align: middle;
     -webkit-border-radius: 4px;
@@ -1001,8 +1001,9 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
     border-radius: 4px
 }
 
-input, textarea, .uneditable-input {
-    width: 550px
+.controls input, textarea, .uneditable-input {
+    width: 90%;
+    max-width: 600px;
 }
 
 textarea {

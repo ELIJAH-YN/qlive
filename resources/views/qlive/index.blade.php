@@ -65,6 +65,7 @@
 {{--                        </div>--}}
 {{--                    </div>--}}
                     <div class="col-md-3 ">
+                        <div class="page_hr_top u-pb-32"></div>
                         <div class="thumbnail ">
                             <div class="row ">
                                 <div class="col-5 col-md-12 ">
@@ -342,6 +343,7 @@
 {{--                    </div>--}}
                     @foreach($articleIndex_2 as $article)
                     <div class="col-md-3 ">
+                    <div class="page_hr_top u-pb-32"></div>
                         <div class="thumbnail ">
                             <div class="row ">
                                 <div class="col-5 col-md-12 ">
@@ -501,6 +503,7 @@
 {{--                    </div>--}}
                     @foreach($articleIndex_3 as $article)
                     <div class="col-md-3 ">
+                    <div class="page_hr_top u-pb-32"></div>
                         <div class="thumbnail ">
                             <div class="row ">
                                 <div class="col-5 col-md-12 ">
@@ -701,6 +704,7 @@
                         </div>
                     </div>
                     <div class="col-md-3 ">
+                    <div class="page_hr_top u-pb-32"></div>
                         <div class="thumbnail ">
                             <div class="row ">
                                 <div class="col-5 col-md-12 ">
@@ -945,6 +949,7 @@
                         </div>
                     </div>
                     <div class="col-md-3 ">
+                    <div class="page_hr_top u-pb-32"></div>
                         <div class="thumbnail ">
                             <div class="row ">
                                 <div class="col-5 col-md-12 ">
@@ -1189,6 +1194,7 @@
                         </div>
                     </div>
                     <div class="col-md-3 ">
+                    <div class="page_hr_top u-pb-32"></div>
                         <div class="thumbnail ">
                             <div class="row ">
                                 <div class="col-5 col-md-12 ">
