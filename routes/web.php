@@ -41,10 +41,6 @@ Route::match(['get','post'],'/admin','Admin\AdminController@login');
      // Form Route (Admin)
      Route::get('/admin/view-form', 'FormController@viewForm');
 
-     // CKeditor
-     Route::get('/ckeditor', 'CkeditorController@index');
-     Route::post('ckeditor/upload', 'CkeditorController@upload')->name('ckeditor.upload');
-
  });
 
 // //Model form

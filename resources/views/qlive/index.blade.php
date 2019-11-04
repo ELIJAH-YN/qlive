@@ -7,7 +7,7 @@
         <div class="jumbotron_Desktop ">
             <div class="jumbotron owl-carousel owl-theme ">
                 <div class="jumbotron__item ">
-                    <div class="image " style="background-image: url( 'images/Desktop/banner1.png') "></div>
+                    <div class="image " style="background-image: url( {{ asset('/assets/images/backend_images/demo/demo-image1.jpg') }})"></div>
                 </div>
                 <div class="jumbotron__item ">
                     <div class="image " style="background-image: url( 'images/Desktop/banner2.png') "></div>
