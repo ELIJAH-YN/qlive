@@ -49,14 +49,14 @@ class ArticleController extends Controller
                 }
             }
 
-            $para = new Paragraph();
-            foreach ($para as $paras)
-            {
-                $data = $request->all();
-                $para->content = $data['content'];
+            // $para = new Paragraph();
+            // foreach ($para as $paras)
+            // {
+            //     $data = $request->all();
+            //     $para->content = $data['content'];
 
-                if
-            }
+            //     if
+            // }
 
             $article->save();
             return redirect('/admin/view-articles')->with('flash_message_success','Article has added successfully!');

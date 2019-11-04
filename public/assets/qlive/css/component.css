@@ -167,7 +167,7 @@
 
 .btn-group--center {
     text-align: center;
-    padding: 30px 20px;
+    padding: 24px 20px;
 }
 
 .btn-group--right {
@@ -375,8 +375,8 @@
 
 .responsive-popup {
     position: fixed;
-    top: -50%;
-    left: -50%;
+    top: 0%;
+    left: 0%;
     width: 100%;
     height: 100%;
     background-color: black;
@@ -393,8 +393,7 @@
     }
 }
 #popup-menu:target {
-    top: 0%;
-    left: 0%;
+  
     opacity: 1;
     visibility: visible;
 }
@@ -1151,12 +1150,19 @@
 /* owl-carouesl image */
 .thumbnails_vidio{
     color: black;
+    
+}
+.thumbnail_vidio{
+    margin-bottom: 16px;
+} 
+.thumbnails_vidio a{
+    overflow: hidden;
 }
 .thumbnail_vidio_title{
     font-size: 22px;
 }
 .thumbnails_vidio .thumbnail__title{
-    margin-bottom: 32px;
+    margin-bottom: 16px;
 }
 .thumbnail_vidio .card{ 
     margin-bottom: 16px;
@@ -1380,8 +1386,6 @@ h6.thumbnail__title {
 /* Internet Celebrity */
 .internetCelebrity {
     padding-top: 80px;
-  
-  
 }
 
 @media(max-width:768px) {
@@ -1390,6 +1394,15 @@ h6.thumbnail__title {
         
     }
 }
+.internetCelebrity .page_hr_top{
+    display: block;
+}
+@media(min-width:768px){
+    .internetCelebrity .page_hr_top{
+        display: none;
+    }
+}
+
 /* Internet Celebrity Page */
 
 .internetCelebrityPage {
@@ -1422,6 +1435,14 @@ h6.thumbnail__title {
         padding-top: 40px;
     }
 }
+.trending .page_hr_top{
+    display: block;
+}
+@media(min-width:768px){
+    .trending .page_hr_top{
+        display: none;
+    }
+}
 
 /*-------------------------*/
 /* $Have fun
@@ -1438,7 +1459,14 @@ h6.thumbnail__title {
         padding-top: 40px;
     }
 }
-
+.have_fun .page_hr_top{
+    display: block;
+}
+@media(min-width:768px){
+    .have_fun .page_hr_top{
+        display: none;
+    }
+}
 
 /*-------------------------*/
 /* $Food photo
@@ -1455,7 +1483,14 @@ h6.thumbnail__title {
         padding-top: 40px;
     }
 }
-
+.food_photo .page_hr_top{
+    display: block;
+}
+@media(min-width:768px){
+    .food_photo .page_hr_top{
+        display: none;
+    }
+}
 
 /*-------------------------*/
 /* $Unboxing
@@ -1470,6 +1505,37 @@ h6.thumbnail__title {
 @media(max-width:768px) {
     .unboxing {
         padding-top: 40px;
+    }
+}
+.unboxing .page_hr_top{
+    display: block;
+}
+@media(min-width:768px){
+    .unboxing .page_hr_top{
+        display: none;
+    }
+}
+/*-------------------------*/
+/* $Shopping mall
+---------------------------*/
+
+/* Shopping mall */
+.shopping_Mall {
+    padding-top: 80px;
+  
+}
+
+@media(max-width:768px) {
+    .shopping_Mall {
+        padding-top: 40px;
+    }
+}
+.shopping_Mall .page_hr_top{
+    display: block;
+}
+@media(min-width:768px){
+    .shopping_Mall .page_hr_top{
+        display: none;
     }
 }
 /*-------------------------*/
@@ -1487,23 +1553,6 @@ h6.thumbnail__title {
         padding-top: 40px;
     }
 }
-
-/*-------------------------*/
-/* $Shopping mall
----------------------------*/
-
-/* Shopping mall */
-.shopping_Mall {
-    padding-top: 80px;
-  
-}
-
-@media(max-width:768px) {
-    .shopping_Mall {
-        padding-top: 40px;
-    }
-}
-
 
 
 

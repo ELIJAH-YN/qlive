@@ -31,7 +31,7 @@
                             <div class="control-group">
                                 <label class="control-label">文章類別</label>
                                 <div class="controls">
-                                    <select name="article_id" id="article_id" style="width: 220px;">
+                                    <select name="article_id" id="article_id" >
                                         <?php echo $categories_dropdown; ?>
                                     </select>
                                 </div>
