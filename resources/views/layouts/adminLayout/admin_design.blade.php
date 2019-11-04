@@ -37,18 +37,11 @@
 <script src="{{ asset('/assets/js/backend_js/matrix.form_validation.js') }}"></script>
 <script src="{{ asset('/assets/js/backend_js/matrix.tables.js') }}"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
-<script src="https://cdn.ckeditor.com/ckeditor5/15.0.0/classic/ckeditor.js"></script>
-<script>
-    ClassicEditor
-        .create( document.querySelector( '#editor' ) )
-        .then( editor => {
-            console.log( editor );
-        } )
-        .catch( error => {
-            console.error( error );
-        } );
-</script>
+<script src="https://cdn.ckeditor.com/4.12.1/standard/ckeditor.js"></script>
 
+<script>
+    CKEDITOR.replace( 'editor' );
+</script>
 
 </body>
 </html>

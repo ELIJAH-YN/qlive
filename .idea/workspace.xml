@@ -5,15 +5,17 @@
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/chillwiing.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/chillwiing.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/backend_css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/backend_css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ModelformController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ModelformController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modelform.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modelform.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Paragraph.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Paragraph.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_29_022403_create_paragraphs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_29_022403_create_paragraphs_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/js/backend_js/matrix.form_validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/backend_js/matrix.form_validation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/articles/add_article.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/articles/add_article.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/articles/view_articles.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/articles/view_articles.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/categories/view_categories.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/categories/view_categories.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/adminLayout/admin_design.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/adminLayout/admin_design.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/adminLayout/admin_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/adminLayout/admin_sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/qliveLayout/qlive_design.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/qliveLayout/qlive_design.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/qlive/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/qlive/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/adminLayout/admin_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/adminLayout/admin_header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/qliveLayout/qlive_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/qliveLayout/qlive_header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/qlive/modelcard/model_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/qlive/modelcard/model_form.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,6 +29,9 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="qlive-V1" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -134,7 +139,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/qlive" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -142,7 +147,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -186,7 +191,13 @@
       <workItem from="1572155961180" duration="10718000" />
       <workItem from="1572248607066" duration="44394000" />
       <workItem from="1572488777434" duration="340000" />
-      <workItem from="1572489154462" duration="4452000" />
+      <workItem from="1572489154462" duration="17311000" />
+      <workItem from="1572579858232" duration="21000" />
+      <workItem from="1572579937574" duration="2013000" />
+      <workItem from="1572589161050" duration="9000" />
+      <workItem from="1572589487227" duration="222000" />
+      <workItem from="1572589740848" duration="8044000" />
+      <workItem from="1572801317593" duration="625000" />
     </task>
     <servers />
   </component>

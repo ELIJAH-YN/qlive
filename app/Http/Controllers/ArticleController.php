@@ -49,11 +49,11 @@ class ArticleController extends Controller
                     $article->cover = $filename;
                 }
             }
-
             $article->save();
 //            return redirect()->back()->with('flash_message_success','Article has added successfully!');
             return redirect('/admin/view-articles')->with('flash_message_success','Article has added successfully!');
         }
+
 
         // Category drop down start
         $categories = Category::where(['parent_id'=>0])->get();

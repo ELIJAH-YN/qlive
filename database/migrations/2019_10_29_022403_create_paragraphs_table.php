@@ -15,7 +15,7 @@ class CreateParagraphsTable extends Migration
     {
         Schema::create('paragraphs', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->text( 'content' )->nullable();
+            $table->text( 'description' )->nullable();
             $table->string( 'cover' )->nullable();
             $table->unsignedInteger( 'article_id' );
             $table->timestamps();

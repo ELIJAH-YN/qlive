@@ -51,39 +51,29 @@
                             <div class="control-group">
                                 <label class="control-label">文章內容</label>
                                 <div class="controls">
-                                    <textarea name="description" id="description"></textarea>
+{{--                                    <textarea name="description" id="description"></textarea>--}}
 {{--                                    <textarea name="description" id="editor">This is some sample content.</textarea>--}}
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <label class="control-label"></label>
-                                <div class="field_wrapper">
-                                    <div class="controls">
-                                        <input type="text" name="description[]" id="description" placeholder="段落文字">
-                                        <input type="file" name="cover[]" id="cover">
-                                        <a href="javascript:void(0);" class="add_button" title="Add field">Add</a>
+                                    <div id="editor">
+                                        <p>This is the editor content.</p>
                                     </div>
                                 </div>
                             </div>
-{{--                            <div class="control-group">--}}
-{{--                                <label class="control-label">段落照片</label>--}}
-{{--                                <div class="controls">--}}
-{{--                                    <div class="uploader" id="uniform-undefined">--}}
-{{--                                        <input type="file" size="19" style="opacity: 0;">--}}
-{{--                                        <span class="filename">No file selected</span>--}}
-{{--                                        <span class="action">Choose File</span>--}}
+{{--                            <form action="{{ url('/admin/add-article-attr') }}" method="post" enctype="multipart/form-data">--}}
+{{--                                {{ csrf_field() }}--}}
+{{--                                <div class="control-group">--}}
+{{--                                    <label class="control-label"></label>--}}
+{{--                                    <div class="field_wrapper">--}}
+{{--                                        <div class="controls">--}}
+{{--                                            <textarea type="text" name="description[]" id="description" placeholder="段落文字"></textarea>--}}
+{{--                                            <input type="file" name="cover[]" id="cover">--}}
+{{--                                            <a href="javascript:void(0);" class="add_button" title="Add field">Add</a>--}}
+{{--                                        </div>--}}
 {{--                                    </div>--}}
 {{--                                </div>--}}
-{{--                            </div>--}}
-{{--                            <div class="control-group">--}}
-{{--                                <label class="control-label">段落文章內容</label>--}}
-{{--                                <div class="controls">--}}
-{{--                                    <textarea name="second_description" id="second_description"></textarea>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
                             <div class="form-actions">
                                 <input type="submit" value="Add Category" class="btn btn-success">
                             </div>
+{{--                            </form>--}}
                         </form>
                     </div>
                 </div>

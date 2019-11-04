@@ -21,9 +21,7 @@
                             <span></span>
                             <span></span>
                         </a>
-
                     </div>
-
                     <div class="container">
                         <div class="album">
                             <div class="album-art-lg-10">

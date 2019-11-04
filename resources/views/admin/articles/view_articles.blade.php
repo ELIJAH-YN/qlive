@@ -33,7 +33,6 @@
                                     <th>文章類別</th>
                                     <th>文章標題</th>
                                     <th>文章封面</th>
-                                    <th>文章內容</th>
                                     <th>編輯/刪除</th>
                                 </tr>
                                 </thead>
@@ -47,7 +46,6 @@
                                             <img src="{{ asset('/assets/images/cover/small/'.$article->cover) }}" alt="" style="width: 70px;">
                                             @endif
                                         </td>
-                                        <td>{{ $article->description }}</td>
                                         <td class="center">
                                             <a href="{{ url('/admin/edit-article/'.$article->id) }}" class="btn btn-primary btn-mini">Edit</a>
                                             <a href="{{ url('/admin/delete-article/'.$article->id) }}" id="delArticle" class="btn btn-danger btn-mini">Delete</a>

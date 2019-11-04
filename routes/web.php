@@ -33,13 +33,23 @@ Route::match(['get','post'],'/admin','Admin\AdminController@login');
     // Article Route (Admin)
      Route::match(['get','post'],'/admin/add-article','ArticleController@addArticle');
      Route::match(['get','post'],'/admin/edit-article/{id}','ArticleController@editArticle');
+     Route::match(['get','post'],'/admin/add-article-att','ArticleController@addArticleAtt');
      Route::get('/admin/view-articles','ArticleController@viewArticles');
      Route::get('/admin/delete-article/{id}','ArticleController@deleteArticle');
      Route::get('/admin/delete-article-cover/{id}','ArticleController@deleteArticleCover');
+
+     // Form Route (Admin)
+     Route::get('/admin/view-form', 'FormController@viewForm');
+
+     // CKeditor
+     Route::get('/ckeditor', 'CkeditorController@index');
+     Route::post('ckeditor/upload', 'CkeditorController@upload')->name('ckeditor.upload');
+
  });
 
 // //Model form
 Route::get('/qlive/model-form','ModelformController@index');
+Route::match(['get','post'],'/qlive/add-model','ModelformController@addModel');
 
 Route::get('/logout', 'Admin\AdminController@logout');
 

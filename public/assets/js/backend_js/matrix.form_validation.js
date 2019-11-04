@@ -235,7 +235,7 @@ $(document).ready(function(){
         var wrapper = $('.field_wrapper'); //Input field wrapper
         var fieldHTML = '' +
             '<div class="controls">' +
-            '<input type="text" name="description[]" id="description" placeholder="段落文字">' +
+            '<textarea type="text" name="description[]" id="description" placeholder="段落文字"></textarea>' +
             '<div class="uploader" id="uniform-cover">' +
             '<div class="uploader" id="uniform-cover">' +
             '<input type="file" name="cover[]" id="cover" size="19" style="opacity: 0;">' +
