@@ -30,6 +30,9 @@ class ArticleController extends Controller
                 $article->description = '';
             }
 
+            $para = new Paragraph();
+            $para->content = implode($data['content'],',');
+
             // Upload Image
             if ($request->hasFile('cover')) {
                 $cover_tmp = $request->file('cover');
@@ -48,17 +51,8 @@ class ArticleController extends Controller
                     $article->cover = $filename;
                 }
             }
-
-            $para = new Paragraph();
-            foreach ($para as $paras)
-            {
-                $data = $request->all();
-                $para->content = $data['content'];
-
-                if
-            }
-
             $article->save();
+            $para->save();
             return redirect('/admin/view-articles')->with('flash_message_success','Article has added successfully!');
         }
 

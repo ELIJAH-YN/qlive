@@ -4,12 +4,8 @@
     <list default="true" id="f98719e0-d6b4-445d-af2e-e305570119ac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CkeditorController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/backend_js/matrix.form_validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/backend_js/matrix.form_validation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/articles/add_article.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/articles/add_article.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/ckeditor.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/qlive/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/qlive/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_29_022403_create_paragraphs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_29_022403_create_paragraphs_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/adminLayout/admin_design.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/adminLayout/admin_design.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -190,7 +186,7 @@
       <workItem from="1572589161050" duration="9000" />
       <workItem from="1572589487227" duration="222000" />
       <workItem from="1572589740848" duration="8044000" />
-      <workItem from="1572801317593" duration="4742000" />
+      <workItem from="1572801317593" duration="7101000" />
     </task>
     <servers />
   </component>
