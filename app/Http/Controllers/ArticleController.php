@@ -17,7 +17,7 @@ class ArticleController extends Controller
     {
         if ($request->isMethod('post')) {
             $data = $request->all();
-//            echo "<pre>"; print_r($data); die();
+            echo "<pre>"; print_r($data); die();
             if (empty($data['article_id'])) {
                 return redirect()->back()->with('flash_message_error','Under Category is missing!');
             }
@@ -29,9 +29,6 @@ class ArticleController extends Controller
             }else {
                 $article->description = '';
             }
-
-            $para = new Paragraph();
-            $para->content = implode($data['content'],',');
 
             // Upload Image
             if ($request->hasFile('cover')) {
