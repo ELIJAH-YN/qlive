@@ -48,8 +48,6 @@ class ArticleController extends Controller
 
                 foreach ($data['image'] as $image) {
                     if ($request->hasFile('image')) {
-//                        dd($images);
-//                        if ($image->isValid()) {
                         $extension = $image->getClientOriginalExtension();
                         $filename = rand(111, 99999) . '.' . $extension;
                         $large_image_path = 'assets/images/cover/large/' . $filename;
@@ -61,9 +59,7 @@ class ArticleController extends Controller
                         Image::make($image)->resize(283, 160)->save($small_image_path);
 
                         $paragraph->image = $filename;
-//                        }
                     }
-//                    dd($data);
                 }
                 $paragraph->save();
                 $article->paragraphs()->save($paragraph);

@@ -31,7 +31,6 @@ class CreateModelformsTable extends Migration
             $table->string('ig_url')->nullable();
             $table->string('ig_people')->nullable();
             $table->string('address');
-            $table->string('image')->nullable();
             $table->string('stream_platform_now')->nullable();
             $table->string('stream_platform_past')->nullable();
             $table->string('job');

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Modelform;
+use App\ModelImage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
 use Image;
@@ -20,8 +21,8 @@ class ModelformController extends Controller
     {
         if ($request->isMethod('post')){
             $data = $request->all();
-            $model = new Modelform();
 
+            $model = new Modelform();
             $model->real_name = $data['real_name'];
             $model->nick_name = $data['nick_name'];
             $model->referrer = $data['referrer'];
@@ -47,8 +48,27 @@ class ModelformController extends Controller
             }else {
                 $model->resume = '';
             }
-            $model = json_decode(json_encode($filename));
-            echo "<pre>"; print_r($filename); die();
+            $model->save();
+
+            $modelImg = new ModelImage();
+
+            foreach ($data['images'] as $image) {
+                if ($request->hasFile('images')) {
+                    $extension = $image->getClientOriginalExtension();
+                    $filename = rand(111, 99999) . '.' . $extension;
+                    $large_image_path = 'assets/images/modelmg/large/' . $filename;
+                    $medium_image_path = 'assets/images/modelmg/medium/' . $filename;
+                    $small_image_path = 'assets/images/modelmg/small/' . $filename;
+                    // Resize Image code
+                    Image::make($image)->save($large_image_path);
+                    Image::make($image)->resize(600, 600)->save($medium_image_path);
+                    Image::make($image)->resize(283, 160)->save($small_image_path);
+
+                    $modelImg->images = $filename;
+                }
+            }
+            $modelImg->save();
+            $model->modelImage()->save($modelImg);
         }
     }
 }
