@@ -4,6 +4,133 @@
     <list default="true" id="f98719e0-d6b4-445d-af2e-e305570119ac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Paragraph.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Paragraph.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/12275.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/16830.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/17111.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/1977.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/35188.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/36111.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/43553.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/46973.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/49447.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/50841.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/51284.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/55360.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/56120.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/58121.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/58180.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/59614.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/61092.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/62418.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/64549.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/65294.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/68114.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/68306.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/70571.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/70642.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/71388.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/73667.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/7530.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/75998.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/76566.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/76922.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/80633.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/83979.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/86227.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/86656.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/87205.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/91133.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/94098.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/12275.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/16830.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/17111.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/1977.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/35188.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/36111.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/43553.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/46973.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/49447.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/50841.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/51284.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/55360.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/56120.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/58121.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/58180.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/59614.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/61092.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/62418.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/64549.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/65294.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/68114.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/68306.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/70571.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/70642.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/71388.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/73667.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/7530.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/75998.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/76566.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/76922.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/80633.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/83979.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/86227.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/86656.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/87205.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/91133.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/94098.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/12275.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/16830.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/17111.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/1977.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/35188.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/36111.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/43553.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/46973.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/49447.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/50841.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/51284.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/55360.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/56120.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/58121.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/58180.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/59614.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/61092.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/62418.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/64549.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/65294.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/68114.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/68306.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/70571.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/70642.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/71388.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/73667.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/7530.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/75998.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/76566.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/76922.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/80633.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/83979.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/86227.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/86656.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/87205.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/91133.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/94098.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend_js/matrix.form_validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/backend_js/matrix.form_validation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/articles/add_article.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/articles/add_article.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/qliveLayout/qlive_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/qliveLayout/qlive_header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/qlive/check.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/qlive/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/qlive/innerpage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/qlive/innerpage.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/qlive/innerpage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/qlive/internetCelebrity.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/qlive/modelcard.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/qlive/onlineform.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/qlive/search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/qlive/trending.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/qlive/trending.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/qlive/trending.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -184,7 +311,7 @@
       <workItem from="1572589161050" duration="9000" />
       <workItem from="1572589487227" duration="222000" />
       <workItem from="1572589740848" duration="8044000" />
-      <workItem from="1572801317593" duration="9977000" />
+      <workItem from="1572801317593" duration="36547000" />
     </task>
     <servers />
   </component>

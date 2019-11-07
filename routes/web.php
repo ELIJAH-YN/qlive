@@ -48,7 +48,7 @@ Route::get('/qlive/model-form','ModelformController@index');
 Route::match(['get','post'],'/qlive/add-model','ModelformController@addModel');
 
 // Index page
-Route::get('/qlive/innerpage-page','PageController@innerpageIndex');
+Route::get('/qlive/innerpage-page/{slug}','PageController@innerpageIndex');
 Route::get('/qlive/trending-page','PageController@trendingIndex');
 Route::get('/qlive/search-page','PageController@searchIndex');
 Route::get('/qlive/onlineform-page','PageController@onlineformIndex');

@@ -14,22 +14,29 @@ class PageController extends Controller
         $articleIndex_2 = Article::where('article_id', '=', '4')->orderBy('id', 'desc')->paginate(8);
         $articleIndex_3 = Article::where('article_id', '=', '6')->orderBy('id', 'desc')->paginate(8);
 
-
         return view('qlive.index')->with(compact('articleIndex_1','articleIndex_2','articleIndex_3'));
     }
 
     public function innerpageIndex()
     {
-    	return view('qlive.innerpage');
+        $articleIndex_1 = Article::where('article_id', '1')->first();
+//        dd($articleIndex_1);
+        return view('qlive.innerpage')->with(compact('articleIndex_1'));
     }
-     public function trendingIndex()
+
+    public function trendingIndex()
     {
-    	return view('qlive.trending');
+        $articleIndex_1 = Article::where('article_id', '=', '1')->orderBy('id', 'desc')->paginate(8);
+//        dd($articleIndex_1);
+
+        return view('qlive.trending')->with(compact('articleIndex_1'));
     }
+
       public function searchIndex()
     {
     	return view('qlive.search');
     }
+
       public function onlineformIndex()
     {
     	return view('qlive.onlineform');

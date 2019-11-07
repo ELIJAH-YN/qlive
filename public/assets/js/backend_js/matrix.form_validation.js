@@ -238,7 +238,7 @@ $(document).ready(function(){
             '<textarea type="text" name="content[]" id="description" placeholder="段落文字"></textarea>' +
             '<div class="uploader" id="uniform-cover">' +
             '<div class="uploader" id="uniform-cover">' +
-            '<input type="file" name="file[]" id="cover" size="19" style="opacity: 0;">' +
+            '<input type="file" name="image[]" id="cover" size="19" style="opacity: 0;">' +
             '<span class="filename">No file selected</span>' +
             '<span class="action">Choose File</span>' +
             '</div>' +

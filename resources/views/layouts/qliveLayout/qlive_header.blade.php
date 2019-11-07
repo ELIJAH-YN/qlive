@@ -12,8 +12,8 @@
                     <span></span>
                 </a>
                 <div class="navbar__logo logo">
-                    <a href="index.html" class="logo__image">
-                        <img class="logo" src="images/Qlive logo.png" alt="">
+                    <a href="/" class="logo__image">
+                        <img class="logo" src="/assets/qlive/images/Qlive logo.png" alt="">
                     </a>
                 </div>
                 <ul id="popup-menu" class="menu menu--horizontal u-clearfix responsive-popup">
@@ -330,70 +330,69 @@
             <div class="navbar__navbar navbar">
                 <ul class="menu-bar">
                     <li>
-                        <a class="w-col-s">Q網紅人</a>
-                        <ul class="dropdown">
-                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">最強網美</a></li>
-                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">最閃網帥</a></li>
-                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">Q閃之星</a></li>
-                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">矚目超新星</a></li>
-                        </ul>
+                        <a class="w-col-s" href="{{ url('/qlive/trending-page') }}">Q網紅人</a>
+{{--                        <ul class="dropdown">--}}
+{{--                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">最強網美</a></li>--}}
+{{--                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">最閃網帥</a></li>--}}
+{{--                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">Q閃之星</a></li>--}}
+{{--                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">矚目超新星</a></li>--}}
+{{--                        </ul>--}}
                     </li>
                     <li>
                         <a class="w-col-s">當紅潮流</a>
                         <ul class="dropdown">
-                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">潮物推介</a></li>
-                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">穿搭特攝</a></li>
-                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">潮錶直擊</a></li>
-                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">運動也潮</a></li>
-                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">最潮宅宅</a></li>
+{{--                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">潮物推介</a></li>--}}
+{{--                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">穿搭特攝</a></li>--}}
+{{--                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">潮錶直擊</a></li>--}}
+{{--                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">運動也潮</a></li>--}}
+{{--                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">最潮宅宅</a></li>--}}
                         </ul>
                     </li>
                     <li>
                         <a class="w-col-s">去你的玩</a>
                         <ul class="dropdown">
-                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">北部玩很大</a></li>
-                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">中部趴趴走</a></li>
-                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">南部走走趣</a></li>
-                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">東部樂趣遊</a></li>
+{{--                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">北部玩很大</a></li>--}}
+{{--                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">中部趴趴走</a></li>--}}
+{{--                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">南部走走趣</a></li>--}}
+{{--                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">東部樂趣遊</a></li>--}}
                         </ul>
                     </li>
                     <li>
                         <a class="w-col-s">美食特拍</a>
                         <ul class="dropdown">
-                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">北部如何吃</a></li>
-                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">中部吃爽爽</a></li>
-                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">南部好味道</a></li>
-                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">東部新鮮味</a></li>
+{{--                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">北部如何吃</a></li>--}}
+{{--                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">中部吃爽爽</a></li>--}}
+{{--                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">南部好味道</a></li>--}}
+{{--                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">東部新鮮味</a></li>--}}
                         </ul>
                     </li>
                     <li>
                         <a class="w-col-s">特火開箱</a>
                         <ul class="dropdown">
-                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">鞋拼特搜</a></li>
-                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">嗆爆3C</a></li>
-                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">車比人兇</a></li>
-                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">IG HOT</a></li>
-                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">FB HOT</a></li>
+{{--                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">鞋拼特搜</a></li>--}}
+{{--                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">嗆爆3C</a></li>--}}
+{{--                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">車比人兇</a></li>--}}
+{{--                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">IG HOT</a></li>--}}
+{{--                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">FB HOT</a></li>--}}
                         </ul>
                     </li>
                     <li>
                         <a class="w-col-s">Q紅影音</a>
                         <ul class="dropdown">
-                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">Qlive潮拍</a></li>
-                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">時尚直擊</a></li>
-                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">背面歌手</a></li>
-                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">吃喝特輯</a></li>
-                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">編輯特搜</a></li>
-                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">網紅搜查線</a></li>
-
+{{--                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">Qlive潮拍</a></li>--}}
+{{--                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">時尚直擊</a></li>--}}
+{{--                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">背面歌手</a></li>--}}
+{{--                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">吃喝特輯</a></li>--}}
+{{--                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">編輯特搜</a></li>--}}
+{{--                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">網紅搜查線</a></li>--}}
                         </ul>
                     </li>
                     <li>
                         <a class="w-col-s">購熱商城</a>
                         <ul class="dropdown">
                             <li><a href="https://shop.quick-pi.com/shop/qlivekol" class="w-col-s" target="_blank">期間限定</a></li>
-                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">優惠活動</a></li>
-                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">編輯推薦</a></li>
+{{--                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">優惠活動</a></li>--}}
+{{--                            <li><a href="{{ url('/qlive/trending-page') }}" class="w-col-s">編輯推薦</a></li>--}}
                         </ul>
                     </li>
                     <li>

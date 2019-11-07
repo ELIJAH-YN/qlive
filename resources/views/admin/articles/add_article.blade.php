@@ -72,7 +72,7 @@
                                 <div class="field_wrapper">
                                     <div class="controls">
                                         <textarea type="text" name="content[]" id="description" placeholder="段落文字"></textarea>
-                                        <input type="file" name="file[]" id="cover">
+                                        <input type="file" name="image[]" id="cover">
                                         <a href="javascript:void(0);" class="add_button" title="Add field">Add</a>
                                     </div>
                                 </div>
