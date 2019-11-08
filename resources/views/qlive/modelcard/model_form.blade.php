@@ -236,7 +236,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <label>上傳個人正面臉部清晰照5張含一張全身 近照</label>
-                        <input type="file" name="images[]" id="image" style="padding: 8px 0px;border: none; ">
+                        <input type="file" name="images[]" id="image" style="padding: 8px 0px;border: none; " multiple>
                     </div>
                 </div>
                 <div class="row">

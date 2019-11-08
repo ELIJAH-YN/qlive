@@ -69,7 +69,7 @@
                         <div class="thumbnail ">
                             <div class="row ">
                                 <div class="col-5 col-md-12 ">
-                                    <a href="# " class="imgbox ">
+                                    <a href="{{ url('/qlive/innerpage-page/'.$article->slug) }}" class="imgbox ">
                                         <div class="imgbox__inner imgbox__inner-16-9 ">
 {{--                                            <div class="image " style="background-image: url( 'images/img2.jpg'); "></div>--}}
                                             <div class="image" ><img src="{{ asset('/assets/images/cover/small/'.$article->cover) }}" alt=""></div>
