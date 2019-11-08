@@ -917,29 +917,8 @@
   
 }
 /* $landing_outer */
-.landing_outer{
-    max-width: 400px;
-    margin: 0 auto;
-    text-align: center;
-}
-.landing_outer .landing_tittle{
-    position: absolute;
-    left: 50%;
-    top: -50%;
-    transform: translate(-50%,-50%);
-    font-size: 24px;
-    transition: 0.3s;
-    color: #fff;
-    white-space:nowrap;
-    background: rgba(0, 0, 0, .8);
-    width: 100%;
-    padding: 32px 0px;
 
-}
-.landing_outer:hover .landing_tittle{
-    top: 50%;
-   
-}
+
 .landing_content {
      padding: 30px;
      background-color: #fff;
@@ -1226,7 +1205,10 @@
 
 
 /* imgbox */
-
+.img{
+    width: 100%;
+    display: block;
+}
 .imgbox {
     width: 100%;
     display: block;
