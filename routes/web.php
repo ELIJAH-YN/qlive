@@ -45,6 +45,7 @@ Route::match(['get','post'],'/admin','Admin\AdminController@login');
 
 // //Model form
 Route::get('/qlive/model-form','ModelformController@index');
+Route::get('/qlive/model-search','ModelformController@show');
 Route::match(['get','post'],'/qlive/add-model','ModelformController@addModel');
 
 // Index page

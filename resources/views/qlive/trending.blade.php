@@ -81,7 +81,7 @@
 				</div>
 				<div class="row ">
 					<div class="col-lg-9 ">
-                        @foreach($articleIndex_1 as $row)
+                        @foreach($trendingPage as $row)
                             <div class="thumbnail">
                                 <div class="row ">
                                     <div class="col-6 ">

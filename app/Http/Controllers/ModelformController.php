@@ -70,5 +70,13 @@ class ModelformController extends Controller
             $modelImg->save();
             $model->modelImage()->save($modelImg);
         }
+        return redirect('/qlive/model-search');
+    }
+
+    public function show($id = null)
+    {
+        $show = Modelform::where('id', $id)->orderBy('id','desc')->paginate(6);
+//        dd($show);
+        return view('qlive.modelcard.model_show')->with(compact('show'));
     }
 }

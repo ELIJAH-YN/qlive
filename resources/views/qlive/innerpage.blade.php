@@ -6,7 +6,7 @@
 	<div class="innerpage page＿padding_top">
 		<div class="container">
 			<div class="subtitle " >
-                {{ $articleIndex_1->title }}
+                {{ $innerPage->title }}
 			</div>
 			<div class="row" >
 				<div class="col-lg-9" >
@@ -17,17 +17,17 @@
 								<div class="imgboxFix">
 									<div class="imgboxFix__inner imgbox__inner-55">
 										<div class="imgFix">
-											<img src="{{ asset('/assets/images/cover/large/'.$articleIndex_1->cover) }}" alt="">
+											<img src="{{ asset('/assets/images/cover/large/'.$innerPage->cover) }}" alt="">
 										</div>
 									</div>
 								</div>
 								<div class="innerpage-detail">
 									<p>
-										{{ $articleIndex_1->description }}
+										{{ $innerPage->description }}
 									</p>
 								</div>
 							</div>
-                            @foreach($articleIndex_1->paragraphs as $paragraph)
+                            @foreach($innerPage->paragraphs as $paragraph)
                                 <div>
                                     <div class="imgboxFix">
                                         <div class="imgboxFix__inner imgbox__inner-55">

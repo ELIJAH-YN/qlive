@@ -17,19 +17,19 @@ class PageController extends Controller
         return view('qlive.index')->with(compact('articleIndex_1','articleIndex_2','articleIndex_3'));
     }
 
-    public function innerpageIndex()
+    public function innerpageIndex($slug)
     {
-        $articleIndex_1 = Article::where('article_id', '1')->first();
+        $innerPage = Article::where('slug', $slug)->first();
 //        dd($articleIndex_1);
-        return view('qlive.innerpage')->with(compact('articleIndex_1'));
+        return view('qlive.innerpage')->with(compact('innerPage'));
     }
 
     public function trendingIndex()
     {
-        $articleIndex_1 = Article::where('article_id', '=', '1')->orderBy('id', 'desc')->paginate(8);
+        $trendingPage = Article::where('article_id', '=', '1')->orderBy('id', 'desc')->paginate(8);
 //        dd($articleIndex_1);
 
-        return view('qlive.trending')->with(compact('articleIndex_1'));
+        return view('qlive.trending')->with(compact('trendingPage'));
     }
 
       public function searchIndex()

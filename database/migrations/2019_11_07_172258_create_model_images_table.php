@@ -15,7 +15,7 @@ class CreateModelImagesTable extends Migration
     {
         Schema::create('model_images', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedInteger('model_id');
+            $table->unsignedInteger('modelform_id');
             $table->string('images')->nullable();
             $table->timestamps();
         });

@@ -2,64 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f98719e0-d6b4-445d-af2e-e305570119ac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/chillwiing.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/chillwiing.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ModelImageController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ModelformController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ModelformController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/17208.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/25077.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/27819.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/2990.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/30996.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/32047.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/49055.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/56105.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/65146.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/95893.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/large/97310.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/17208.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/25077.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/27819.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/2990.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/30996.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/32047.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/49055.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/56105.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/65146.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/95893.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/medium/97310.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/17208.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/25077.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/27819.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/2990.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/30996.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/32047.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/49055.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/56105.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/65146.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/95893.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/cover/small/97310.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/modelmg/large/23514.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/modelmg/large/44491.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/modelmg/large/45792.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/modelmg/large/60116.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/modelmg/large/6612.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/modelmg/large/88578.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/modelmg/medium/23514.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/modelmg/medium/44491.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/modelmg/medium/45792.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/modelmg/medium/60116.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/modelmg/medium/6612.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/modelmg/medium/88578.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/modelmg/small/23514.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/modelmg/small/44491.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/modelmg/small/45792.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/modelmg/small/60116.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/modelmg/small/6612.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/modelmg/small/88578.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/qlive/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/qlive/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_07_172258_create_model_images_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_07_172258_create_model_images_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/qlive/innerpage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/qlive/innerpage.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/qlive/modelcard/model_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/qlive/modelcard/model_form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/qlive/modelcard/model_show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/qlive/modelcard/model_show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/qlive/search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/qlive/search.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/qlive/trending.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/qlive/trending.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -241,7 +192,7 @@
       <workItem from="1572589487227" duration="222000" />
       <workItem from="1572589740848" duration="8044000" />
       <workItem from="1572801317593" duration="36547000" />
-      <workItem from="1573147095671" duration="9260000" />
+      <workItem from="1573147095671" duration="17367000" />
     </task>
     <servers />
   </component>
