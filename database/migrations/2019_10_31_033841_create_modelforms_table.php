@@ -15,6 +15,7 @@ class CreateModelformsTable extends Migration
     {
         Schema::create('modelforms', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('slug')->unique()->index();
             $table->string('real_name');
             $table->string('nick_name')->nullable();
             $table->string('referrer')->nullable();

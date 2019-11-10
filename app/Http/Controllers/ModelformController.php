@@ -69,14 +69,22 @@ class ModelformController extends Controller
             }
             $modelImg->save();
             $model->modelImage()->save($modelImg);
+            // dd($modelImg);
         }
         return redirect('/qlive/model-search');
     }
 
+    public function profile($slug)
+    {
+        $profile = Modelform::where('slug', $slug)->first();
+        return view('qlive.modelcard.model_profile')->with(compact('profile'));
+    }
+
     public function show($id = null)
     {
-        $show = Modelform::where('id', $id)->orderBy('id','desc')->paginate(6);
-//        dd($show);
+        // $show = Modelform::where('id', $id)->orderBy('id','desc')->paginate(6);
+        $show = Modelform::get();
+        // dd($show);
         return view('qlive.modelcard.model_show')->with(compact('show'));
     }
 }
