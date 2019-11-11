@@ -87,7 +87,7 @@
                                     <div class="col-6 ">
                                         <a href="{{ url('/qlive/innerpage-page/'.$row->slug) }}" class="imgbox ">
                                             <div class="imgbox__inner imgbox__inner-16-9">
-                                                <div class="image"><img src="{{ asset('/assets/images/cover/large/'.$row->cover) }}" alt=""></div>
+                                                <div class="img"><img src="{{ asset('/assets/images/cover/large/'.$row->cover) }}" alt=""></div>
                                             </div>
                                         </a>
                                     </div>

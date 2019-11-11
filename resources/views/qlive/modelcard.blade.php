@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @extends('layouts.qliveLayout.qlive_design')
 @section('content')
 
@@ -85,3 +86,5 @@
 
 
 @endsection
+=======
+>>>>>>> d89f810e330beb9d0035cc49c76d1991f89ac63f

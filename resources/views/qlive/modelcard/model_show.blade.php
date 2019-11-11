@@ -21,12 +21,12 @@
                     </div>
                 </div>
                 <div  class="modeCard_hr u-pb-32 "></div>
-                @foreach($show as $row)
                     <div class="row">
+                        @foreach($show as $row)
                         <div class="col-lg-2 col-6  u-mb-24" data-wow-delay="0.8s">
                             <div class="searchBoxImg">
-                                <a href="modelcard.html" class="search_imge" >
-                                    @foreach($show->modelImage as $img)
+                                <a href="{{ url('/qlive/model-profile/'.$row->slug) }}" class="search_imge" >
+                                    @foreach($row->modelImage as $img)
                                         <div class="imgbox">
                                             <div class="imgbox__inner imgbox__inner-3-4 ">
                                                 <div class="image">
@@ -39,8 +39,8 @@
                                 </a>
                             </div>
                         </div>
+                        @endforeach
                     </div>
-                @endforeach
                 <ul class="pager u-clearfix">
                     <li class="previous"><a href="news.html">← Newer</a></li>
 
