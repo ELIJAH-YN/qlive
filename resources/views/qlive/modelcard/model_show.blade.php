@@ -27,13 +27,14 @@
                             <div class="searchBoxImg">
                                 <a href="{{ url('/qlive/model-profile/'.$row->slug) }}" class="search_imge" >
                                     @foreach($row->modelImage as $img)
-                                        <div class="imgbox">
-                                            <div class="imgbox__inner imgbox__inner-3-4 ">
-                                                <div class="image">
-                                                    <img src="{{ asset('/assets/images/modelmg/large/'.$img->images) }}" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <img class="img" src="{{ asset('/assets/images/modelmg/large/'.$img->images) }}" alt="">
+{{--                                        <div class="imgbox">--}}
+{{--                                            <div class="imgbox__inner imgbox__inner-3-4 ">--}}
+{{--                                                <div class="image">--}}
+{{--                                                    <img src="{{ asset('/assets/images/modelmg/large/'.$img->images) }}" alt="">--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
                                     @endforeach
                                     <p>{{ $row->real_name }}</p>
                                 </a>
