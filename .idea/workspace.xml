@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f98719e0-d6b4-445d-af2e-e305570119ac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/qlive/modelcard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/qlive/modelcard.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -190,7 +189,7 @@
       <workItem from="1572801317593" duration="36547000" />
       <workItem from="1573147095671" duration="17639000" />
       <workItem from="1573206101386" duration="1416000" />
-      <workItem from="1573438655360" duration="317000" />
+      <workItem from="1573438655360" duration="1283000" />
     </task>
     <servers />
   </component>
